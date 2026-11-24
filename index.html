@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingrid Lima — design, marcas e experiências</title>
+<meta name="description" content="Portfólio de Ingrid Lima: branding, social media, UI/UX, papelaria e experiências digitais com estética zine rock.">
+<meta property="og:title" content="Ingrid Lima — design, marcas e experiências">
+<meta property="og:description" content="Ingrid Lima, designer e social media. Identidade visual, posts, landing pages e convites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=UnifrakturCook:wght@700&family=Permanent+Marker&family=Space+Mono:wght@700&family=Inter:wght@400;600;800&family=Pirata+One&family=Special+Elite&family=Gloock&family=Gochi+Hand&family=Onest:wght@400;600&family=Italiana&family=Inria+Serif:ital,wght@0,400;0,700;1,400&family=Nothing+You+Could+Do&family=Pinyon+Script&family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Jost:wght@400;500&family=Kalnia:wght@500&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#0B0909; --vermelho:#E0201B; --vermelho-escuro:#A3120F; --papel:#ECE4DF; --osso:#F7F2EE; --cinza:#D9CFCB; --fita:#D9CFC0;
+  --display:"Big Shoulders Display",Impact,sans-serif; --gotico:"UnifrakturCook",serif; --marcador:"Permanent Marker",cursive;
+  --mono:"Space Mono",monospace; --sans:"Inter",system-ui,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--tinta);color:var(--osso);font-family:var(--sans);font-size:clamp(17px,1.15vw,19px);line-height:1.55;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body{isolation:isolate}body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:-1;background-image:var(--noise);opacity:.09;mix-blend-mode:screen;animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--vermelho);outline-offset:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--vermelho);color:#fff;padding:10px 16px;font-weight:800;text-decoration:none}
+.skip:focus{top:12px}
+h1,h2,h3{margin:0;font-weight:900}
+p{margin:0}
+.d{font-family:var(--display);text-transform:uppercase;line-height:.86;letter-spacing:-.01em}
+.g{font-family:var(--gotico);text-transform:none;letter-spacing:0;font-weight:700;line-height:1.1}
+.mk{font-family:var(--marcador)}
+.cap{font-family:var(--mono);font-size:15px;letter-spacing:.08em}
+.wrap{padding-inline:var(--pad)}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:80;display:flex;justify-content:space-between;align-items:center;padding:18px var(--pad);mix-blend-mode:difference;color:#fff}
+.nav a{text-decoration:none;font-weight:800}
+.nav ul{display:flex;gap:clamp(14px,2.5vw,36px);list-style:none;margin:0;padding:0}
+.nav ul a{font-family:var(--display);text-transform:uppercase;font-size:22px;letter-spacing:.02em}
+.nav ul a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px}
+.nav .home{font-family:var(--gotico);font-size:30px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;padding-bottom:96px!important;display:grid;grid-template-columns:1.25fr 1fr;align-items:end;gap:var(--pad);padding:120px var(--pad) 56px;overflow:hidden}
+.hero h1{font-size:clamp(56px,9vw,172px);position:relative;z-index:3}
+.hero h1 .g{display:inline-block;color:var(--vermelho);font-size:.9em;transform:rotate(-5deg);margin-left:.05em;cursor:pointer;background:none;border:0;padding:0;font-family:var(--gotico);line-height:1;color:var(--vermelho)}
+.hero h1 .g:hover{color:var(--osso)}
+.hero .sub{margin-top:28px;max-width:34ch;color:var(--cinza);font-size:clamp(18px,1.4vw,22px)}
+.hero .sub b{color:var(--osso)}
+.portrait{position:relative;align-self:stretch;min-height:56vh}
+.portrait .duo{position:absolute;inset:0 0 0 6%;transform:rotate(2deg)}
+.drag-hint{position:absolute;left:8%;bottom:-40px;z-index:5;font-family:var(--marcador);color:var(--osso);font-size:22px;transform:rotate(-4deg)}
+.letters{position:absolute;inset:0;z-index:4}
+.cut{position:absolute;padding:.04em .16em;font-size:clamp(46px,6vw,92px);line-height:1;cursor:grab;user-select:none;touch-action:none;box-shadow:0 10px 24px rgba(0,0,0,.45);transition:box-shadow .2s, scale .2s}
+.cut:active{cursor:grabbing;box-shadow:0 22px 40px rgba(0,0,0,.6);scale:1.06}
+.cut.c1{background:var(--vermelho);color:var(--osso);font-family:var(--display)}
+.cut.c2{background:var(--osso);color:var(--tinta);font-family:"Pirata One",serif}
+.cut.c3{background:var(--tinta);color:var(--osso);font-family:"Special Elite",monospace;outline:2px solid var(--osso);outline-offset:-2px}
+.cut.c4{background:var(--papel);color:var(--vermelho);font-family:var(--sans);font-weight:800}
+.hero .meta{position:absolute;top:96px;right:var(--pad);text-align:right;color:var(--cinza);z-index:3}
+
+/* xerox scan intro */
+.scan{position:fixed;inset:0;z-index:150;pointer-events:none;background:var(--tinta);animation:scanOut 1.35s .2s cubic-bezier(.6,0,.2,1) forwards}
+.scan::before{content:"";position:absolute;left:0;right:0;height:90px;top:-90px;background:linear-gradient(180deg,transparent,rgba(247,242,238,.9) 45%,#fff 50%,rgba(224,32,27,.6) 56%,transparent);filter:blur(2px);animation:scanBar 1.35s .2s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes scanBar{to{top:100%}}
+@keyframes scanOut{to{clip-path:inset(100% 0 0 0)}}
+.scan{clip-path:inset(0 0 0 0)}
+
+/* ---------- duotone ---------- */
+.duo{position:relative;overflow:hidden;background:var(--tinta)}
+.duo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.35) brightness(1.05);transition:filter .7s ease}
+.duo::after{content:"";position:absolute;inset:0;background:var(--vermelho);mix-blend-mode:multiply;transition:opacity .7s ease;pointer-events:none}
+.duo::before{content:"";position:absolute;inset:0;z-index:2;background-image:var(--noise);opacity:.18;mix-blend-mode:overlay;pointer-events:none}
+.duo.reveal:hover img,.duo.reveal:focus-within img{filter:none}
+.duo.reveal:hover::after,.duo.reveal:focus-within::after{opacity:0}
+
+/* ---------- paper / tape ---------- */
+.paper{background:var(--papel);color:var(--tinta);position:relative}
+.paper::after{content:"";position:absolute;inset:0;background-image:var(--noise);opacity:.25;mix-blend-mode:multiply;pointer-events:none;filter:invert(1)}
+.tape{position:absolute;width:130px;height:38px;background:var(--fita);opacity:.82;z-index:6;box-shadow:0 2px 4px rgba(0,0,0,.15)}
+.shadow{filter:drop-shadow(0 14px 22px rgba(0,0,0,.45))}
+
+/* ---------- manifesto ---------- */
+.manifesto{margin:40px 0 0;padding:72px var(--pad) 84px;transform:rotate(-1.2deg) scale(1.03)}
+.manifesto{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:var(--pad);align-items:end}.manifesto p{max-width:30ch;font-family:var(--display);text-transform:uppercase;font-size:clamp(38px,5vw,88px);line-height:.92;position:relative;z-index:2}
+.manifesto p .g{color:var(--vermelho-escuro)}
+.manifesto .aside{max-width:36ch;font-size:clamp(18px,1.35vw,21px)!important;line-height:1.5!important;align-self:end;padding-bottom:10px;border-top:3px solid var(--tinta);padding-top:16px;font-family:var(--sans);text-transform:none;font-size:18px;line-height:1.5;color:#2A1214}
+
+/* ---------- index ---------- */
+.index{padding:140px var(--pad) 80px;position:relative}
+.index h2{font-size:clamp(56px,9vw,170px)}
+.index h2 .g{color:var(--vermelho);font-size:.7em;display:inline-block;transform:rotate(-4deg)}
+.works{list-style:none;margin:56px 0 0;padding:0;border-top:3px solid var(--osso)}
+.works a{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:20px;padding:22px 0 18px;border-bottom:1px solid #3a3232;text-decoration:none;position:relative}
+.works .t{font-family:var(--display);text-transform:uppercase;font-size:clamp(40px,6.4vw,118px);line-height:.88;transition:color .25s, transform .35s cubic-bezier(.2,.8,.2,1)}
+.works .k{color:var(--cinza);text-align:right;font-size:16px;max-width:24ch}
+.works a:hover .t,.works a:focus-visible .t{color:var(--vermelho);transform:translateX(18px) skewX(-6deg)}
+.peek{position:fixed;left:0;top:0;width:340px;height:240px;z-index:70;pointer-events:none;opacity:0;transform:translate(-50%,-50%) rotate(-4deg) scale(.6);transition:opacity .2s, transform .35s cubic-bezier(.2,.9,.2,1.2)}
+.peek.on{opacity:1;transform:translate(-50%,-60%) rotate(-4deg) scale(1)}
+.peek .duo{width:100%;height:100%;border:8px solid var(--osso)}
+.peek .tape{left:30%;top:-16px;transform:rotate(-8deg)}
+
+/* ---------- case common ---------- */
+.case{position:relative;padding:120px var(--pad);overflow-x:clip}
+.case .lbl{color:var(--cinza)}
+.case h2{font-size:clamp(56px,10vw,190px);overflow-wrap:anywhere}
+.case .lede{font-size:clamp(20px,1.6vw,26px);max-width:36ch;margin-top:28px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:28px 40px;margin-top:56px;padding-top:24px;border-top:2px solid currentColor;max-width:1100px}
+.facts dt{font-family:var(--mono);font-size:14px;letter-spacing:.06em;opacity:.8}
+.facts dd{margin:6px 0 0;font-size:17px}
+.pend{display:inline-block;background:var(--fita);color:var(--tinta);padding:0 .35em;font-family:var(--marcador);font-size:.92em}
+
+/* Mutirão */
+.mut{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:var(--pad);align-items:start}
+.mut>*{min-width:0}.mut .sticky{position:sticky;top:100px}
+.mut h2 .g{color:var(--vermelho);font-size:.5em;display:block;transform:rotate(-3deg);margin:.15em 0 .1em}
+.phones{display:flex;gap:28px;justify-content:center;align-items:flex-start;padding-top:40px}
+.phone{width:min(31%,280px);aspect-ratio:9/18.5;border-radius:34px;border:9px solid #1e1a1a;background:#FCFBF7;color:#12332E;font-family:"Onest",sans-serif;overflow:hidden;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.5);flex-shrink:0}
+.phone:nth-child(2){margin-top:90px}
+.phone:nth-child(3){margin-top:30px}
+.phone .in{padding:22px 16px;display:flex;flex-direction:column;gap:10px;font-size:13px}
+.phone .h4{margin:0 0 6px;font-family:"Gloock",serif;font-weight:400;font-size:24px;line-height:1.05}
+.chip{border-radius:14px;padding:12px;font-weight:600}
+.tray{border-radius:14px;padding:12px;font-weight:600;display:flex;justify-content:space-between}
+.steps{list-style:none;margin:72px 0 0;padding:0;display:grid;gap:22px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:baseline;counter-increment:s;max-width:60ch}
+.steps li::before{content:counter(s);font-family:var(--display);font-size:64px;line-height:.8;color:var(--vermelho)}
+.steps b{display:block;font-size:20px;margin-bottom:4px}
+
+/* Mais Bella — muda o papel */
+.mb{background:#F5F0E8;color:#2B2820}
+.mb .lbl{color:#5E5440}
+.mb h2{font-family:"Italiana",serif;text-transform:none;font-weight:400;letter-spacing:0;line-height:.9;color:#2B2820}
+.mb .lede{font-family:"Inria Serif",serif}
+.mb .facts dt{opacity:1;color:#4A5238}
+.mb-head{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--pad);align-items:end}
+.mb .note{font-family:"Nothing You Could Do",cursive;font-size:28px;color:#4A4330;transform:rotate(-3deg)}
+.swatches{display:flex;height:120px;margin-top:56px}
+.swatches span{flex:1;display:flex;align-items:flex-end;padding:10px;font-family:"Inria Serif",serif;font-size:15px;font-weight:700;transition:flex .4s cubic-bezier(.2,.8,.2,1)}
+.swatches span:hover{flex:2.4}
+.reel{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;padding:56px var(--pad) 30px;margin:0 calc(var(--pad) * -1)}
+.reel::-webkit-scrollbar{height:8px}.reel::-webkit-scrollbar-thumb{background:#6E7A5E}
+.post{flex:0 0 auto;width:min(78vw,380px);aspect-ratio:4/5;scroll-snap-align:start;position:relative;overflow:hidden;box-shadow:0 18px 40px rgba(43,40,32,.25)}
+.post.story{aspect-ratio:9/16;width:min(62vw,300px)}
+.reel-hint{font-family:"Nothing You Could Do",cursive;font-size:22px;color:#4A4330}
+
+/* Wedding — envelope */
+.wed{padding:0;background:#E9E3DA;color:#2E4352}
+.wed-intro{padding:120px var(--pad) 40px;display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:end}
+.wed h2{font-family:"Bodoni Moda",serif;text-transform:none;font-weight:400;letter-spacing:-.02em;line-height:.9;color:#2E4352}
+.wed h2 em{font-family:"Pinyon Script",cursive;font-style:normal;color:#A3502F;font-size:.8em}
+.wed .lede{font-family:"Cormorant Garamond",serif;font-size:clamp(22px,1.8vw,28px)}
+.wed .lbl{color:#5E5047}
+.env-track{height:230vh;position:relative}
+.env-stage{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;perspective:1400px}
+.envelope{--p:0;position:relative;width:min(560px,86vw);aspect-ratio:1.45;margin-top:22vh}
+.env-back,.env-front,.env-flap{position:absolute;inset:0}
+.env-back{background:#B6835C;border-radius:4px}
+.env-front{background:linear-gradient(#C8946B,#C8946B);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);z-index:4;border-radius:4px;box-shadow:0 30px 50px rgba(46,67,82,.25)}
+.env-flap{z-index:5;transform-origin:top center;transform:rotateX(calc(var(--p) * 180deg));background:#A9734C;clip-path:polygon(0 0,100% 0,50% 62%);backface-visibility:visible;z-index:calc(5 - var(--z,0))}
+.seal{position:absolute;left:50%;top:52%;width:74px;height:74px;margin:-37px 0 0 -37px;border-radius:50%;background:#7E2E1E;color:#E9C9A8;display:grid;place-items:center;font-family:"Bodoni Moda",serif;font-style:italic;font-size:24px;z-index:6;opacity:calc(1 - var(--p) * 3);box-shadow:inset 0 0 0 4px #9a3c28}
+.card{position:absolute;left:5%;right:5%;top:3%;height:94%;z-index:3;overflow:hidden;transform:translateY(calc(var(--c,0) * -74% + var(--f,0) * 62%)) scale(calc(1 + var(--f,0) * .14));z-index:calc(3 + var(--fz,0));background:#F7F2EA;color:#2E4352;font-family:"Cormorant Garamond",serif;text-align:center;padding:5% 7%;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.card::before{content:"";position:absolute;inset:14px;border:1px solid #2E4352;box-shadow:inset 0 0 0 4px #F7F2EA,inset 0 0 0 5px #CDBFAE}
+.card .mono{font-family:"Bodoni Moda",serif;font-size:clamp(26px,3.6vw,40px);font-style:italic}
+.card .mono span{color:#A3502F}
+.card .k{font-family:"Jost",sans-serif;font-size:clamp(9px,1vw,11px);letter-spacing:.3em;text-transform:uppercase;color:#5E5047;margin-top:12px}
+.card .names{font-family:"Pinyon Script",cursive;font-size:clamp(30px,4.6vw,54px);white-space:nowrap;color:#A3502F;line-height:1.1;margin-top:6px}
+.card .date{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:8px}
+.card .date b{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(44px,6vw,66px);line-height:.9}
+.card .date span{font-family:"Jost",sans-serif;font-size:clamp(9px,1vw,11px);letter-spacing:.24em;text-transform:uppercase;border-block:1px solid #2E4352;padding:5px 0;width:76px}
+.wed-more>*,.wed-intro>*,.mb-head>*,.about>*{min-width:0}.wed-more{padding:40px var(--pad) 120px;display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:start}
+.digital{border:2px dashed #8A7B70;padding:28px;font-family:"Cormorant Garamond",serif;font-size:22px}
+.digital .t{font-family:"Bodoni Moda",serif;font-size:34px;margin-bottom:8px}
+
+/* Khipu */
+.kh{background:#062E2E;color:#E6F2EC}
+.kh-banner{margin:48px calc(var(--pad) * -1) 0;height:min(70vh,640px);position:relative}
+.kh-banner .duo{position:absolute;inset:0}
+.kh-banner .duo::after{background:#0E7C7B}
+.kh-quote{position:absolute;left:var(--pad);bottom:40px;z-index:3;max-width:min(90%,820px)}
+.kh-quote q{display:block;font-family:"Big Shoulders Display";text-transform:uppercase;font-size:clamp(44px,7vw,120px);line-height:.9;quotes:none;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.lang{display:inline-flex;margin-top:18px;border:2px solid #E6F2EC}
+.lang button{all:unset;cursor:pointer;padding:8px 16px;font-family:var(--mono);font-size:15px}
+.lang button[aria-pressed=true]{background:#E6F2EC;color:#062E2E}
+.lang button:focus-visible{outline:3px solid var(--vermelho);outline-offset:2px}
+.kh-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:56px;align-items:start}
+.kh-grid figure{margin:0}
+.kh-grid figcaption{font-size:15px;color:#9cc7bd;margin-top:10px}
+.kh-grid .duo::after{background:#0E7C7B}
+.kh .facts{border-color:#2f6b62}
+
+/* Aurora */
+.au{background:#F3EFFA;color:#1F1338}
+.au .lbl{color:#6B5A99}
+.au h2{font-family:var(--sans);font-weight:800;text-transform:none;letter-spacing:-.05em;line-height:.9;background:linear-gradient(90deg,#3D1D8F,#C2268E);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stack{display:grid;grid-template-columns:1.25fr 1fr;gap:32px;margin-top:56px;align-items:start}
+.stack img{width:100%;border:6px solid #fff;box-shadow:0 24px 48px rgba(31,19,56,.22);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.stack img:nth-child(1){grid-column:1/-1;transform:rotate(-1deg)}
+.stack img:nth-child(2){transform:rotate(1.2deg)}
+.stack img:nth-child(3){transform:rotate(-1.4deg)}
+.stack img:hover{transform:rotate(0) scale(1.02)}
+.au .facts{border-color:#c9bde6}
+
+/* Playground pinboard */
+.play{padding:140px var(--pad) 120px}
+.play h2{font-size:clamp(56px,9vw,170px)}
+.play h2 .g{color:var(--vermelho);font-size:.66em;display:inline-block;transform:rotate(-5deg)}
+.board{position:relative;height:min(900px,120vw);margin-top:40px;background:#1a1414;border:2px solid #2a2222}
+.pin{position:absolute;touch-action:none;cursor:grab;user-select:none}
+.pin:active{cursor:grabbing}
+.pin .cap{display:block;margin-top:8px;color:var(--cinza)}
+.zine{width:260px;aspect-ratio:4/5;background:var(--tinta);position:relative;overflow:hidden;border:1px solid #333;padding:18px}
+.zine .d{font-size:64px;color:var(--osso)}
+.zine .g{color:var(--osso);font-size:44px;display:block;transform:rotate(-5deg)}
+.zine .strip{position:absolute;left:-10px;right:-10px;bottom:20px;padding:14px 28px;transform:rotate(-2deg)}
+.disc{width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,#0B0909 0 13%,#8b8b8b 13.5% 15%,var(--vermelho) 15.5% 100%);display:grid;place-items:center;text-align:center;font-family:var(--display);font-size:34px;line-height:.9;color:#fff;box-shadow:0 14px 26px rgba(0,0,0,.5)}
+.disc span{transform:translateY(54px)}
+.nails{width:230px;background:#F1ECE4;color:#3A230A;font-family:"Atkinson Hyperlegible",sans-serif;border-radius:22px;overflow:hidden;box-shadow:0 14px 26px rgba(0,0,0,.5)}
+.nails .bar{background:#2B2820;color:#F4ECE2;padding:10px 16px;font-family:"Kalnia",serif;font-size:26px}
+.nails .bd{padding:14px 16px;font-size:13px}
+.nails .days{display:flex;gap:6px;margin:10px 0}
+.nails .days span{flex:1;border:1.5px solid #D8CCBE;border-radius:20px 20px 8px 8px;text-align:center;padding:8px 0;font-weight:700}
+.nails .days .on{background:#4B3730;color:#F4ECE2;border-color:#4B3730}
+
+/* About */
+.about{padding:140px var(--pad);display:grid;grid-template-columns:.8fr 1.2fr;gap:var(--pad);align-items:center}
+.about .photo{position:relative;transform:rotate(-3deg);max-width:min(420px,88%);margin-inline:auto}
+.about .photo img{border:12px solid var(--osso);box-shadow:0 30px 50px rgba(0,0,0,.5)}
+.about .photo .tape{top:-14px;left:36%;transform:rotate(6deg)}
+.about h2{font-size:clamp(56px,8vw,150px)}
+.about h2 .g{color:var(--vermelho);font-size:.64em;display:inline-block;transform:rotate(-4deg)}
+.about .txt{max-width:56ch;display:grid;gap:18px;margin-top:28px;color:var(--cinza)}
+.about .txt b{color:var(--osso)}
+.tags{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:28px;font-family:var(--display);text-transform:uppercase;font-size:26px}
+.tags span:nth-child(odd){color:var(--vermelho)}
+
+/* Contact — tear-off poster */
+.contact{padding:120px var(--pad) 80px;display:flex;justify-content:center}
+.contact{overflow-x:clip}.poster{width:min(760px,100%);padding:56px 48px 0;transform:rotate(1deg);position:relative}
+.poster .tape.a{left:-30px;top:16px;transform:rotate(-30deg)}
+.poster .tape.b{right:-30px;top:16px;transform:rotate(30deg)}
+.poster h2{font-size:clamp(64px,11vw,150px);position:relative;z-index:2}
+.poster h2 .g{display:block;color:var(--vermelho-escuro);font-size:.56em;line-height:1.15;transform:rotate(-3deg);margin-top:.1em}
+.poster p{position:relative;z-index:2;font-size:20px;max-width:40ch;margin-top:36px}
+.tabs{display:flex;margin:44px -48px 0;border-top:2px dashed #8a7c74;position:relative;z-index:2}
+.tab{flex:1;min-height:150px;border:0;border-right:2px dashed #8a7c74;background:var(--papel);color:var(--tinta);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:16px 6px;font:inherit;transform-origin:top center;transition:transform .5s cubic-bezier(.4,1.6,.4,1)}
+.tab:last-child{border-right:0}
+.tab{flex-direction:column;gap:8px;text-align:center}
+.tab b{font-family:var(--display);text-transform:uppercase;font-size:26px;line-height:1}
+.tab small{font-family:var(--mono);font-size:13px;overflow-wrap:anywhere}
+.tab:hover{transform:rotate(-3deg)}
+.tab.torn{animation:tear .9s cubic-bezier(.5,0,.6,1) forwards}
+@keyframes tear{30%{transform:rotate(-12deg) translateY(6px)}100%{transform:translate(40px,140vh) rotate(60deg);opacity:0}}
+.status{min-height:28px;margin-top:20px;text-align:center;font-family:var(--marcador);color:var(--osso);font-size:22px}
+.links{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;margin-top:10px;color:var(--cinza)}
+footer{padding:40px var(--pad) 60px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#8f8580;font-size:15px;border-top:1px solid #2a2222}
+
+/* reveal on scroll (subtle, one rule) */
+.cutin{clip-path:inset(0 0 100% 0);transform:translateY(30px) rotate(-1deg);transition:clip-path .9s cubic-bezier(.7,0,.2,1),transform .9s cubic-bezier(.7,0,.2,1)}
+.cutin.in{clip-path:inset(-20% -20% -20% -20%);transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .nav ul a{font-size:18px}
+  .hero{grid-template-columns:1fr;align-items:start;padding-top:96px}
+  .drag-hint{bottom:10px!important;left:10%!important;font-size:18px!important}
+  .portrait{min-height:62vh;order:-1}
+  .mut,.mb-head,.wed-intro,.wed-more,.about{grid-template-columns:1fr}
+  .mut .sticky{position:static}
+  .phones{gap:12px}
+  .phone{border-width:6px;border-radius:24px}
+  .phone .in{padding:14px 10px;font-size:10px}
+  .phone .h4{font-size:16px}
+  .chip,.tray{padding:8px;border-radius:10px}
+  .kh-grid{grid-template-columns:1fr 1fr}
+  .kh-grid figure:first-child{grid-column:1/-1}
+  .works a{grid-template-columns:1fr}
+  .works .k{text-align:left}
+  .manifesto{grid-template-columns:1fr}
+  .board{height:auto;display:flex;flex-wrap:wrap;gap:36px;justify-content:center;padding:36px 16px;background:none;border:0}
+  .pin{position:relative!important;left:auto!important;top:auto!important;cursor:default}
+  .tabs{margin-inline:-24px}
+  .poster{padding:44px 24px 0}
+  .tabs{flex-wrap:wrap}.tab{min-height:110px;flex:1 1 50%;border-bottom:2px dashed #8a7c74}
+}
+@media (max-width:560px){.nav ul{gap:10px}.nav ul li:nth-child(3){display:none}.nav .home{font-size:24px}.nav ul li:nth-child(2){display:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .scan{display:none}
+  .cutin{clip-path:none;transform:none}
+  .envelope{--p:1!important;--c:1!important;--f:1!important;--fz:5!important}
+}
+
+/* ===== v4 additions ===== */
+.stamp{position:absolute;width:150px;height:150px;z-index:8;color:var(--vermelho);rotate:-12deg;pointer-events:none}
+.stamp svg{width:100%;height:100%;animation:spin 18s linear infinite}
+.stamp b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:40px;line-height:.8;text-align:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .stamp{right:calc(var(--pad) + 8px);bottom:70px}
+.award{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:8px 14px;border:2px solid currentColor;font-family:var(--display);text-transform:uppercase;font-size:22px;letter-spacing:.02em;transform:rotate(-1.5deg)}
+.award i{font-style:normal;background:var(--vermelho);color:#fff;padding:0 8px}
+
+/* como e por quê */
+.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:64px}
+.how>div{border-top:3px solid currentColor;padding-top:16px}
+.how h3{font-family:var(--display);text-transform:uppercase;font-size:30px;line-height:.9;margin-bottom:10px}
+.how p{font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips button{font:600 14px var(--sans);padding:6px 10px;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer}
+.chips button:hover{background:currentColor}
+.chips button:hover span{filter:invert(1)}
+
+/* phone mockup */
+.device{width:min(320px,82vw);aspect-ratio:9/19;border-radius:44px;border:11px solid #141010;background:#141010;position:relative;box-shadow:0 40px 80px rgba(0,0,0,.45);overflow:hidden;flex-shrink:0}
+.device::before{content:"";position:absolute;top:8px;left:50%;width:34%;height:22px;margin-left:-17%;background:#141010;border-radius:20px;z-index:9}
+.device .screen{position:absolute;inset:0;border-radius:33px;overflow:hidden;background:#fff}
+
+/* Mutirão app interativo */
+.mut2{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center;margin-top:56px}
+.app{font-family:"Onest",sans-serif;color:#12332E;background:#FCFBF7;height:100%;display:flex;flex-direction:column}
+.app .view{flex:1;padding:44px 18px 12px;display:none;flex-direction:column;gap:10px;font-size:14px}
+.app .view.on{display:flex}
+.app .h4{margin:0 0 4px;font:400 28px/1.05 "Gloock",serif}
+.app .tabbar{display:flex;border-top:1px solid #dfe9e4;background:#fff}
+.app .tabbar button{flex:1;padding:12px 4px 16px;border:0;background:none;font:600 12px "Onest";color:#5c706b;cursor:pointer}
+.app .tabbar button[aria-selected=true]{color:#146A3A;box-shadow:inset 0 3px 0 #146A3A}
+.notes{display:grid;gap:18px}
+.notes p{font-size:17px;max-width:36ch;padding-left:16px;border-left:3px solid var(--vermelho);opacity:.35;transition:opacity .3s}
+.notes p.on{opacity:1}
+.notes .mk{font-size:22px;color:#FF5A55;display:block;margin-bottom:2px}
+
+/* Mais Bella feed */
+.mb2{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center;margin-top:56px}
+.ig{font-family:-apple-system,"Inter",sans-serif;color:#222;height:100%;overflow-y:auto;background:#fff}
+.ig .top{padding:40px 14px 10px;display:flex;gap:12px;align-items:center}
+.ig .av{width:62px;height:62px;border-radius:50%;background:#4A5238;display:grid;place-items:center;color:#F5F0E8;font:400 13px Italiana;border:3px solid #fff;outline:2px solid #CC8D49}
+.ig .nums{display:flex;gap:14px;font-size:11px;text-align:center}.ig .nums b{display:block;font-size:14px}
+.ig .bio{padding:0 14px 10px;font-size:11.5px;line-height:1.35}
+.ig .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ig .grid button img{width:100%;height:100%;object-fit:cover;display:block}.ig .grid button{aspect-ratio:4/5;border:0;padding:0;cursor:zoom-in;position:relative;overflow:hidden;display:block}
+.ig .grid button:focus-visible{outline:3px solid var(--vermelho);outline-offset:-3px}
+.mini{position:absolute;inset:0;transform-origin:0 0}
+.mb-why{display:grid;gap:22px}
+.mb-why .mk{color:#4A5238}
+
+/* lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:96vw;max-height:96vh;overflow:visible}
+dialog.lb::backdrop{background:rgba(11,9,9,.86);backdrop-filter:blur(3px)}
+.lb-in{display:grid;grid-template-columns:auto minmax(0,320px);gap:28px;align-items:center;color:var(--osso)}
+.lb-art{width:min(70vh,560px);max-width:86vw;aspect-ratio:4/5;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.6);background:#fff}
+.lb-art img{width:100%;height:100%;object-fit:cover;display:block}.lb-art.wide{aspect-ratio:auto;width:min(1200px,90vw)}
+.lb-art.wide img{width:100%;height:auto}
+.lb-cap h3{font-family:var(--display);text-transform:uppercase;font-size:40px;line-height:.9}
+.lb-cap p{margin-top:12px;font-size:17px;color:var(--cinza)}
+.lb-close{position:absolute;top:-52px;right:0;background:var(--vermelho);color:#fff;border:0;font:800 16px var(--sans);padding:10px 16px;cursor:pointer}
+
+/* convite digital (vídeo) */
+.wed-dig{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center;padding:40px var(--pad) 120px}
+.inv{position:absolute;left:0;right:0;top:0;background:#F7F2EA;color:#2E4352;font-family:"Cormorant Garamond",serif;text-align:center;animation:invScroll 16s cubic-bezier(.6,0,.4,1) infinite}
+.inv.paused{animation-play-state:paused}
+@keyframes invScroll{0%,10%{transform:translateY(0)}30%,38%{transform:translateY(-25%)}55%,63%{transform:translateY(-50%)}80%,92%{transform:translateY(-72%)}100%{transform:translateY(0)}}
+.inv section{min-height:560px;padding:56px 22px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.inv .s{font-family:"Pinyon Script",cursive;color:#A3502F;font-size:46px;line-height:1.05}
+.inv .b{font-family:"Bodoni Moda",serif}
+.inv .j{font-family:"Jost",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#5E5047}
+.inv .arch{width:170px;height:200px;border-radius:85px 85px 0 0;background:linear-gradient(180deg,#9DB0A3,#5f7d6c);position:relative;overflow:hidden}
+.inv .arch::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:repeating-linear-gradient(90deg,#4f6b5b 0 8px,#5f7d6c 8px 16px)}
+.inv .count{display:flex;gap:12px}.inv .count span{border:1px solid #2E4352;padding:8px 10px;min-width:54px}.inv .count b{display:block;font-family:"Bodoni Moda";font-size:26px;font-weight:400}
+.inv .btn{background:#2E4352;color:#F7F2EA;font-family:"Jost";font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:12px 18px;margin-top:8px}
+.inv .tl{display:grid;gap:12px;font-size:17px}.inv .tl div{display:flex;gap:14px;justify-content:center}.inv .tl b{font-family:"Bodoni Moda";font-weight:400;width:56px;text-align:right}
+.play-btn{margin-top:22px;font:800 15px var(--sans);background:#2E4352;color:#F7F2EA;border:0;padding:10px 16px;cursor:pointer}
+
+/* browser frame */
+.browser{border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.35);border:1px solid rgba(0,0,0,.12)}
+.browser .bar{display:flex;align-items:center;gap:8px;padding:10px 14px;background:#ECE8F2}
+.browser .bar i{width:11px;height:11px;border-radius:50%;background:#cfc6dd}
+.browser .bar span{margin-left:12px;flex:1;background:#fff;border-radius:6px;padding:4px 10px;font:12px var(--sans);color:#6b6480;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser img{width:100%;height:auto;display:block}
+.kh .browser .bar{background:#0b3c3a}.kh .browser .bar i{background:#2f6b62}.kh .browser .bar span{background:#062E2E;color:#9cc7bd}
+.btabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.btabs button{font:600 14px var(--sans);padding:8px 12px;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer}
+.btabs button[aria-selected=true]{background:#3D1D8F;color:#fff;border-color:#3D1D8F}
+.thumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}
+.thumbs button{border:0;padding:0;background:none;cursor:zoom-in;text-align:left;color:inherit}
+.thumbs img{width:100%;aspect-ratio:1;object-fit:cover;border:4px solid #E6F2EC}
+.thumbs span{display:block;margin-top:8px;font-size:15px;color:#9cc7bd}
+
+/* ROI demo */
+.roi{margin-top:48px;background:#fff;color:#1F1338;padding:28px;border:1px solid #d9cfee;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center;box-shadow:0 20px 40px rgba(31,19,56,.1)}
+.roi label{display:block;font:600 15px var(--sans);margin-top:14px}
+.roi input{width:100%;height:28px;accent-color:#7A2BB8}
+.roi output{font-family:var(--sans);font-weight:800;font-size:clamp(34px,4vw,56px);letter-spacing:-.04em;color:#7A2BB8;display:block;line-height:1}
+.roi small{display:block;color:#6B5A99;margin-top:8px;font-size:14px}
+
+/* ferramentas */
+.tools{padding:120px var(--pad)}
+.tools h2{font-size:clamp(56px,9vw,170px)}
+.tools h2 .g{color:var(--vermelho);font-size:.66em;display:inline-block;transform:rotate(-4deg)}
+.toolgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:var(--pad);margin-top:48px;align-items:start}
+.kit{display:flex;flex-wrap:wrap;gap:12px}
+.kit button{font-family:var(--display);text-transform:uppercase;font-size:clamp(24px,2.4vw,34px);line-height:1;padding:10px 16px;background:var(--osso);color:var(--tinta);border:0;cursor:pointer;box-shadow:0 6px 0 rgba(0,0,0,.5);transition:transform .2s}
+.kit button:nth-child(3n){background:var(--vermelho);color:var(--osso)}
+.kit button:nth-child(4n){background:var(--papel);color:var(--tinta)}
+.kit button:nth-child(odd){rotate:-1.5deg}.kit button:nth-child(even){rotate:1.5deg}
+.kit button:hover,.kit button[aria-pressed=true]{transform:translateY(-6px);outline:3px solid var(--osso);outline-offset:3px}
+.toolout{min-height:220px;padding:28px;transform:rotate(1deg)}
+.toolout h3{font-family:var(--display);text-transform:uppercase;font-size:44px;line-height:.9;position:relative;z-index:2}
+.toolout p,.toolout ul{position:relative;z-index:2}
+.toolout ul{margin:14px 0 0;padding-left:20px}
+.cred{list-style:none;margin:72px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;counter-reset:c}
+.cred li{border-top:3px solid var(--vermelho);padding-top:14px}
+.cred b{display:block;font-family:var(--display);text-transform:uppercase;font-size:34px;line-height:.9;margin-bottom:8px}
+.cred span{color:var(--cinza);font-size:16px}
+
+@media (max-width:900px){
+  .how,.cred{grid-template-columns:1fr}
+  .mut2{grid-template-columns:1fr;justify-items:center}
+  .mut2 .notes{order:2}
+  .mb2,.wed-dig,.toolgrid,.roi{grid-template-columns:1fr;justify-items:center}
+  .mb2>*,.wed-dig>*,.toolgrid>*,.roi>*{justify-self:stretch}
+  .mb2 .device,.wed-dig .device{justify-self:center}
+  .lb-in{grid-template-columns:1fr;max-height:92vh;overflow:auto}
+  .thumbs{grid-template-columns:1fr 1fr}
+  .hero .stamp{width:104px;height:104px;top:auto;bottom:40%;right:12px}
+  .stamp b{font-size:28px}
+}
+@media (prefers-reduced-motion:reduce){.inv{animation:none}}
+
+/* ===== texturas v6 ===== */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url(img/tx-poeira.webp) 0 0/700px;opacity:.55;mix-blend-mode:screen;animation:dust 2.4s steps(4) infinite}
+@keyframes dust{0%{background-position:0 0}25%{background-position:-180px 90px}50%{background-position:140px -220px}75%{background-position:-60px 300px}}
+.paper{background:var(--papel) url(img/tx-papel.webp) center/620px;background-blend-mode:multiply}
+.paper::after{background:url(img/tx-toner.webp) 0 0/520px;opacity:.35;mix-blend-mode:multiply;filter:none}
+.mb,.wed,.au{background-image:url(img/tx-papel.webp);background-size:700px;background-blend-mode:multiply}
+.duo::before{background-image:radial-gradient(rgba(0,0,0,.55) 1px,transparent 1.6px),var(--noise);background-size:5px 5px,auto;opacity:.32;mix-blend-mode:multiply}
+.tape{clip-path:polygon(3% 0%, 97% 0%, 100% 20%, 96% 40%, 100% 62%, 95% 82%, 98% 100%, 2% 100%, 5% 78%, 0% 58%, 4% 38%, 0% 16%);background:linear-gradient(90deg,rgba(255,255,255,.18),transparent 30%,rgba(255,255,255,.12) 70%,transparent),var(--fita);opacity:.78}
+.rip{position:relative}
+.rip::before{content:"";position:absolute;left:0;right:0;top:-26px;height:28px;background:inherit;background-position:top;clip-path:polygon(0.00% 62.3%, 1.43% 74.2%, 2.86% 79.5%, 4.29% 94.2%, 5.71% 74.0%, 7.14% 92.2%, 8.57% 2.9%, 10.00% 46.6%, 11.43% 94.3%, 12.86% 64.9%, 14.29% 90.1%, 15.71% 11.3%, 17.14% 46.9%, 18.57% 24.7%, 20.00% 54.4%, 21.43% 57.4%, 22.86% 1.3%, 24.29% 21.7%, 25.71% 27.9%, 27.14% 91.6%, 28.57% 76.6%, 30.00% 16.0%, 31.43% 79.7%, 32.86% 13.9%, 34.29% 61.7%, 35.71% 12.7%, 37.14% 0.2%, 38.57% 87.1%, 40.00% 20.9%, 41.43% 21.5%, 42.86% 98.2%, 44.29% 87.2%, 45.71% 28.9%, 47.14% 96.1%, 48.57% 53.9%, 50.00% 67.8%, 51.43% 20.5%, 52.86% 94.1%, 54.29% 69.1%, 55.71% 96.7%, 57.14% 89.4%, 58.57% 29.9%, 60.00% 36.1%, 61.43% 16.6%, 62.86% 14.6%, 64.29% 6.5%, 65.71% 30.1%, 67.14% 60.3%, 68.57% 0.3%, 70.00% 67.8%, 71.43% 33.8%, 72.86% 31.0%, 74.29% 81.9%, 75.71% 48.1%, 77.14% 31.6%, 78.57% 48.1%, 80.00% 70.5%, 81.43% 5.7%, 82.86% 97.5%, 84.29% 2.3%, 85.71% 75.0%, 87.14% 84.5%, 88.57% 1.8%, 90.00% 78.8%, 91.43% 36.6%, 92.86% 57.9%, 94.29% 0.9%, 95.71% 4.7%, 97.14% 18.1%, 98.57% 95.5%, 100.00% 19.7%, 100% 100%, 0% 100%);z-index:3;pointer-events:none}
+.torn-edge{clip-path:var(--tear)}
+.dark-tx{position:relative}
+.dark-tx::after{content:"";position:absolute;inset:0;pointer-events:none;background:url(img/tx-toner.webp) 0 0/600px;filter:invert(1);opacity:.12;mix-blend-mode:screen}
+
+.off{padding:40px var(--pad) 120px}
+.off h2{font-size:clamp(48px,7vw,130px)}
+.off h2 .g{color:var(--vermelho);font-size:.7em;display:inline-block;transform:rotate(-4deg)}
+.offgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:48px;align-items:start}
+.off-k{color:var(--vermelho);font-size:24px;display:block;margin-bottom:18px}
+.bands{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.bands .cut{position:static;max-width:100%;white-space:normal;font-size:clamp(24px,2.4vw,34px);cursor:default}
+.bands .cut:nth-child(odd){rotate:-3deg}.bands .cut:nth-child(even){rotate:2.5deg}
+.polaroid{background:var(--osso);padding:14px 14px 18px;rotate:2deg;position:relative;box-shadow:0 20px 40px rgba(0,0,0,.45);max-width:320px;justify-self:center}
+.cat{aspect-ratio:1;background:#2a2222;display:grid;place-items:center;text-align:center;color:var(--cinza);font-family:var(--marcador);font-size:20px}
+.stamps{display:flex;flex-wrap:wrap;gap:14px}
+.stamps span{font-family:var(--display);text-transform:uppercase;font-size:28px;padding:12px 16px;border:3px dashed var(--osso);rotate:-2deg}
+.stamps span:nth-child(2){rotate:3deg;border-color:var(--vermelho);color:var(--vermelho)}
+@media (max-width:900px){.offgrid{grid-template-columns:1fr}}
+
+.still-btn{position:fixed;right:16px;bottom:16px;z-index:85;font:800 13px var(--sans);background:var(--tinta);color:var(--osso);border:2px solid var(--osso);padding:6px 10px;cursor:pointer;min-height:32px}
+body.still *,body.still *::before,body.still *::after,body.still::before,body.still::after{animation-play-state:paused!important}
+body.still .inv{animation-play-state:paused!important}
+@media (max-width:560px){.still-btn{font-size:11px;padding:4px 6px}}
+
+.trophy{padding:120px var(--pad);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--pad);align-items:center}
+.trophy h2{font-size:clamp(56px,8vw,150px)}
+.trophy h2 .g{display:block;color:var(--vermelho);font-size:.62em;transform:rotate(-4deg);margin-top:.1em}
+.trophy .lede{margin-top:28px;max-width:36ch;font-size:clamp(19px,1.5vw,24px)}
+.tr-hint{display:block;margin-top:28px;color:#FF5A55;font-size:22px;transform:rotate(-2deg)}
+.decks{display:flex;gap:clamp(20px,4vw,56px);justify-content:center;perspective:1400px}
+.deck{all:unset;cursor:pointer;width:min(clamp(140px,12vw,190px),20vh);aspect-ratio:200/760;display:block;--rx:0deg;--ry:0deg;--flip:0deg}
+.deck:focus-visible{outline:3px solid var(--vermelho);outline-offset:8px;border-radius:120px}
+.deck:nth-child(1){transform:rotate(-8deg) translateY(20px)}
+.deck:nth-child(2){transform:rotate(7deg) translateY(-20px)}
+.deck-in{position:relative;display:block;width:100%;height:100%;transform-style:preserve-3d;transform:rotateX(var(--rx)) rotateY(calc(var(--ry) + var(--flip)));transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.deck.moving .deck-in{transition:transform .12s linear}
+.face{position:absolute;inset:0;border-radius:999px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 30px 50px rgba(0,0,0,.55), inset 0 0 0 5px rgba(0,0,0,.12)}
+.face::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(calc(100deg + var(--ry)), rgba(255,255,255,0) 30%, rgba(255,255,255,.28) 48%, rgba(255,255,255,0) 62%);pointer-events:none}
+.yellow{background:#F2E100}
+.yellow svg{position:absolute;inset:0;width:100%;height:100%}
+.deck-word{position:absolute;left:50%;bottom:16%;transform:translateX(-50%) rotate(-90deg);font-family:var(--display);font-size:clamp(54px,5.6vw,84px);color:transparent;-webkit-text-stroke:3px #E8187A;letter-spacing:.06em}
+.deck-small{position:absolute;left:50%;top:9%;transform:translateX(-50%);font:600 clamp(12px,1.1vw,16px) var(--sans);letter-spacing:.3em;color:#111;font-style:normal}
+.black{background:#111;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8%;text-align:center}
+.black .rings{position:absolute;inset:-20% -60%;background:repeating-radial-gradient(circle at 70% 30%,transparent 0 9px,rgba(255,255,255,.09) 9px 10px);opacity:.8}
+.rnv{position:relative;font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(30px,3vw,46px)}
+.rock{position:relative;font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(24px,2.3vw,36px);line-height:1.05}
+.rock em{font-style:italic}
+.dots{position:relative;letter-spacing:.3em;font-size:14px}
+.start{position:relative;font:600 9px var(--sans);letter-spacing:.3em;font-style:normal}
+.back{transform:rotateY(180deg);background:#1b1919;background-image:var(--noise),radial-gradient(#2a2727 1px,transparent 1.5px);background-size:auto,4px 4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:18px}
+.sticker{display:block;width:86%;background:var(--osso);padding:6px 6px 8px;transform:rotate(-4deg);box-shadow:0 8px 16px rgba(0,0,0,.5)}
+.sticker img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.sticker.wide img{aspect-ratio:4/3}
+.sticker.s2{transform:rotate(5deg)}
+.sticker em{display:block;font-family:var(--marcador);font-style:normal;color:var(--tinta);font-size:13px;margin-top:4px;text-align:center}
+@media (max-width:900px){.trophy{grid-template-columns:1fr}.deck{width:clamp(130px,38vw,180px)}}
+
+.kh-sub{font-size:clamp(40px,5vw,84px);margin-top:96px}
+.kh-sub .g{color:#F6C445;font-size:.75em}
+.kh-note{color:#9cc7bd;margin-top:10px}
+.strip-scroll{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:28px var(--pad) 18px;margin:0 calc(var(--pad)*-1)}
+.place{all:unset;cursor:zoom-in;flex:0 0 min(78vw,460px);scroll-snap-align:start}
+.place img{width:100%;aspect-ratio:16/9;object-fit:cover;border:3px solid #0E7C7B}
+.place span{display:block;margin-top:8px;font-family:var(--display);text-transform:uppercase;font-size:26px}
+.place:focus-visible{outline:3px solid #F6C445;outline-offset:4px}
+.people{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin-top:28px}
+.people figure{margin:0}.people img{width:100%;aspect-ratio:1;object-fit:cover}
+.people figcaption{margin-top:6px;font-family:var(--display);text-transform:uppercase;font-size:24px}
+.kh-id{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:28px;margin-top:72px;align-items:center}
+.kh-id figure{margin:0}.kh-id img{width:100%;max-height:320px;object-fit:contain}
+.kh-id button{all:unset;cursor:zoom-in;display:block}
+.kh-id figcaption{color:#9cc7bd;font-size:15px;margin-top:8px}
+.au-cap{margin-top:12px;color:#4A3A7A;font-size:17px}
+.btabs{gap:6px}.btabs button{font-size:13px;padding:7px 10px}
+.iris{display:grid;grid-template-columns:180px minmax(0,1fr);gap:28px;align-items:center;margin-top:48px;max-width:820px}
+.iris img{width:180px;aspect-ratio:1;object-fit:cover;border-radius:50%;border:5px solid #fff;box-shadow:0 14px 30px rgba(31,19,56,.2)}
+@media (max-width:900px){.people{grid-template-columns:repeat(3,1fr)}.kh-id{grid-template-columns:1fr}.iris{grid-template-columns:1fr}.iris img{width:140px}}
+
+/* ===== rodada 8: copy, Aurora LP, Mutirão, papelaria, fora da faculdade ===== */
+p,li,dd,blockquote{text-wrap:pretty}h1,h2,h3,.lede{text-wrap:balance}
+.manifesto p{font-size:clamp(34px,4.3vw,76px);max-width:20ch;line-height:.95;text-wrap:balance}
+.lp{margin-top:36px}
+.lp-chaps,.btabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.lp-chaps button,.btabs button{font:600 14px var(--sans);min-height:40px;padding:8px 12px;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer}
+.lp-chaps button[aria-pressed=true]{background:#3D1D8F;color:#fff;border-color:#3D1D8F}
+.btabs button[aria-pressed=true]{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.lp-scroll{height:min(640px,72vh);overflow-y:auto;overscroll-behavior:contain;background:#fff}
+.lp-scroll:focus-visible{outline:3px solid var(--vermelho);outline-offset:-3px}
+.lp-scroll img{display:block;width:100%;height:auto}
+/* papelaria */
+.paperwork{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center;margin:40px 0 72px}
+.flat{position:relative;aspect-ratio:4/3;background:#C9B79C url(img/tx-papel.webp) center/cover;background-blend-mode:multiply;border-radius:4px;box-shadow:inset 0 0 80px rgba(0,0,0,.18);overflow:hidden}
+.pc{position:absolute;background:#F7F2EA;color:#2E4352;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:14px;box-shadow:0 14px 28px rgba(40,30,20,.25)}
+.pc .j{font-family:'Pinyon Script';color:#A3502F;font-size:30px;line-height:1.1}.pc .b{font-family:'Bodoni Moda';font-size:26px}.pc .s{font-family:'Cormorant Garamond';font-style:italic;font-size:16px}
+.pc.sd{left:5%;top:8%;width:26%;aspect-ratio:5/7;background:#2E4352;color:#F7F2EA;rotate:-7deg}.pc.sd .j{color:#E9C9A8}
+.pc.cv{left:31%;top:12%;width:34%;aspect-ratio:5/7;rotate:2deg;border:1px solid #d9cdb8}
+.pc.cv .qr{width:38px;height:38px;margin-top:6px;background:repeating-conic-gradient(#2E4352 0 25%,#F7F2EA 0 50%) 0 0/9px 9px}
+.pc.mn{right:5%;top:6%;width:27%;aspect-ratio:3/4;background:#E9DCC8;rotate:6deg;border-left:8px solid #A3502F}
+.pc.tg{right:13%;bottom:7%;width:18%;aspect-ratio:2/3;rotate:-10deg;clip-path:polygon(18% 0,82% 0,100% 12%,100% 100%,0 100%,0 12%)}
+.pc.tg::before{content:"";position:absolute;top:7%;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#CFC3B0;box-shadow:inset 0 0 0 2px #A3502F}
+.pc.lg{left:12%;bottom:6%;width:30%;aspect-ratio:3/2;rotate:4deg;background:#fff;border:1px dashed #A3502F}
+.pc p{max-width:100%}
+/* mutirão */
+.mt{background:#F4F7F5;color:#12332E}
+.mt .lbl{color:#146A3A;margin-bottom:28px}
+.mut-intro{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end}
+.mut-q{font-family:'Gochi Hand','Permanent Marker',cursive;font-size:clamp(26px,2.6vw,38px);line-height:1.15;color:#146A3A;border-left:5px solid #146A3A;padding-left:18px}
+.mut-q span{display:block;font:600 13px var(--sans);color:#4c635d;margin-top:8px}
+.mut-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(20px,3vw,48px);align-items:center;margin-top:48px}
+.mt .browser .bar{background:#E2ECE7}.mt .browser .bar i{background:#b6cbc2}
+.mut-phone{width:min(240px,60vw);height:auto;filter:drop-shadow(0 24px 40px rgba(18,51,46,.3))}
+.mut-data{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;margin:56px 0;background:#12332E;border:2px solid #12332E}
+.mut-data li{background:#F4F7F5;padding:22px 20px;font-size:16px;line-height:1.4}
+.mut-data b{overflow-wrap:anywhere;display:block;font-family:Gloock,serif;font-weight:400;font-size:clamp(38px,4vw,58px);color:#146A3A;line-height:1;margin-bottom:8px}
+.mut-data small{display:block;margin-top:6px;color:#4c635d;font-size:13px}
+.mut-h{font-family:Gloock,serif;font-weight:400;font-size:clamp(28px,3vw,44px);margin-bottom:16px}
+.mt .btabs button[aria-pressed=true]{background:#146A3A;border-color:#146A3A;color:#fff}
+.mt .au-cap{color:#12332E;max-width:70ch}
+.mut-more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,40px);margin-top:56px}
+.mut-more h3{font-family:Gloock,serif;font-weight:400;font-size:26px;margin-bottom:8px}
+.themes{display:flex;gap:8px;margin-top:12px}.themes span{padding:10px 16px;font-size:18px}
+.figs{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.figs img{width:96px;height:96px;object-fit:contain}.figs img:last-child{width:160px}
+.mut-role{margin-top:40px;padding-top:18px;border-top:2px solid #12332E}
+.mt a{color:#146A3A;font-weight:600}
+/* fora da faculdade */
+.play-intro{color:var(--cinza);max-width:52ch;margin-top:18px;font-size:19px}
+.bp-ig{color:var(--papel)}
+.bp-ig .mb-why p,.bp-ig dd{color:#E8DFD9}.bp-ig dt{color:var(--cinza)}
+.ig.bp .av{background:#120C0C;color:#F7F2EE;font:400 15px UnifrakturCook;outline-color:#C4161C}
+.bn{margin-top:100px;background:#F3EEE7 url(img/tx-papel.webp) center/cover;color:#4A3A30;padding:clamp(28px,5vw,64px)}
+.bn-head{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
+.bn-t{font-family:Kalnia,serif;font-weight:500;font-size:clamp(48px,7vw,104px);line-height:.9;color:#4A3A30}.bn-t i{font-style:normal;font-family:'Pinyon Script';color:#A3502F}
+.bn-head p{font-family:'Atkinson Hyperlegible',var(--sans);font-size:19px;line-height:1.5;max-width:52ch}
+.bn-steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(12px,2vw,28px);margin:44px 0 56px;font-family:'Atkinson Hyperlegible',var(--sans);font-size:15px;line-height:1.4}
+.bn-steps img{width:100%;height:auto;border:7px solid #1d1714;border-radius:26px;margin-bottom:12px;box-shadow:0 18px 32px rgba(74,58,48,.25)}
+.bn-steps b{display:block;font-family:Kalnia,serif;font-weight:500;font-size:20px;color:#A3502F}
+.bn .browser .bar{background:#E7DED3}.bn .browser .bar i{background:#cdbfae}
+.bn .btabs button[aria-pressed=true]{background:#4A3A30;border-color:#4A3A30;color:#F3EEE7}
+.bn .au-cap{color:#4A3A30}
+.bn-desk{max-width:1040px;margin-inline:auto}.bn-foot{margin-top:22px;font-family:'Atkinson Hyperlegible',var(--sans);font-size:16px;max-width:70ch}
+@media (max-width:900px){
+ .paperwork,.mut-intro,.mut-top,.mut-more,.bn-head{grid-template-columns:1fr}
+ .mut-top{justify-items:center}.mut-top .browser{justify-self:stretch}
+ .mut-data{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .bn-steps{grid-template-columns:repeat(5,minmax(150px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+ .bn-steps li{scroll-snap-align:start}
+ .lp-scroll{height:60vh}
+}
+
+.flat.real{background-color:#BFAE94}
+.flat .pz{position:absolute;padding:0;border:0;background:none;cursor:zoom-in;filter:drop-shadow(0 12px 18px rgba(40,30,20,.3));transition:transform .25s}
+.flat .pz img{display:block;width:100%;height:auto}
+.flat .pz:hover,.flat .pz:focus-visible{transform:translateY(-6px) scale(1.04);z-index:3}
+.flat .pz:focus-visible{outline:3px solid #A3502F;outline-offset:4px}
+.pw-strip{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 18px;margin:-40px 0 72px;scroll-snap-type:x mandatory}
+.pw-strip button{flex:0 0 auto;width:150px;border:0;background:none;padding:0;cursor:zoom-in;text-align:left;scroll-snap-align:start;font:14px var(--sans);color:#2E4352}
+.pw-strip img{width:150px;height:190px;object-fit:contain;background:#E9E1D3;padding:8px;margin-bottom:6px;display:block}
+.pw-strip button:focus-visible{outline:3px solid #A3502F;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.flat .pz{transition:none}}
+.lb-art.pap{aspect-ratio:auto;background:none;box-shadow:none;width:auto;max-width:min(620px,86vw)}.lb-art.pap img{width:auto;height:auto;max-width:100%;max-height:82vh;min-height:min(440px,60vh);object-fit:contain;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+
+.rule{margin-top:26px;border:2px solid var(--papel);padding:16px 18px;max-width:46ch}
+.rule p{font-size:17px}.rule b{color:var(--vermelho)}
+.rule ul{list-style:none;padding:0;margin-top:10px;display:grid;gap:6px}
+.rule li{display:grid;grid-template-columns:90px 1fr;gap:10px;font-size:15px}.rule li a{color:var(--papel);font-weight:800}.rule li span{color:var(--cinza)}
+.story{margin-top:64px}
+.story-t{font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.6vw,54px);line-height:.95;margin-bottom:24px}
+.story h4{font:800 19px var(--sans);margin-bottom:8px}
+.story p{font-size:16px;line-height:1.55;max-width:62ch}
+.st-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.st-grid>div{border-top:2px solid currentColor;padding-top:14px}
+.st-steps{list-style:none;padding:0;counter-reset:st;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-bottom:40px}
+.st-steps li{counter-increment:st;border-top:2px solid currentColor;padding-top:14px}
+.st-steps li::before{content:"Etapa " counter(st);display:block;font:700 13px 'Space Mono',monospace;margin-bottom:6px;opacity:.75}
+.roi-bars{display:flex;margin-top:14px;height:34px;font:600 11px var(--sans);color:#fff}
+.roi-bars span{width:var(--w);display:flex;align-items:center;padding:0 6px;white-space:nowrap;overflow:hidden}
+.roi-bars span:nth-child(1){background:#3D1D8F}.roi-bars span:nth-child(2){background:#7A2BB8}.roi-bars span:nth-child(3){background:#1F7A8C}
+.roi-split{font-size:14px;margin-top:8px}
+@media (max-width:900px){.st-grid,.st-steps{grid-template-columns:1fr}}
+
+/* ===== rodada 9: auditoria de layout e responsividade ===== */
+html{scroll-padding-top:76px}
+.nav{mix-blend-mode:normal;background:rgba(11,9,9,.94);backdrop-filter:blur(6px);border-bottom:1px solid rgba(247,242,238,.12);padding:10px var(--pad);gap:16px;color:var(--osso)}
+.nav ul{margin-left:auto}
+.nav ul a{color:var(--osso)}
+.still-btn{position:static;width:40px;height:40px;min-height:40px;padding:0;display:grid;place-items:center;border:2px solid var(--osso);background:transparent;flex-shrink:0}
+.still-btn .ic{width:12px;height:14px;border-left:4px solid var(--osso);border-right:4px solid var(--osso)}
+.still-btn[aria-pressed=true] .ic{width:0;height:0;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent var(--osso);margin-left:3px}
+.still-btn:focus-visible{outline:3px solid var(--vermelho);outline-offset:2px}
+/* lightbox: tela cheia, botão sempre visível */
+dialog.lb{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:72px 24px 24px;overflow:auto;display:none}
+dialog.lb[open]{display:grid;place-items:center}
+.lb-in{max-height:none;overflow:visible;width:min(1200px,100%);justify-content:center}
+.lb-close{position:fixed;top:16px;right:16px;z-index:5;min-height:44px;padding:10px 18px}
+.lb-art.wide{width:auto;max-width:min(1000px,calc(100vw - 48px - 340px))}
+.lb-art.wide img{width:auto;max-width:100%;max-height:calc(100dvh - 110px);object-fit:contain;margin:0 auto}
+.lb-art:not(.wide):not(.pap){width:min(560px,calc((100dvh - 110px)*.8),calc(100vw - 48px - 340px))}
+@media (max-width:900px){
+ .lb-in{grid-template-columns:1fr;gap:18px;justify-items:center}
+ .lb-art.wide{max-width:100%}.lb-art.wide img{max-height:70dvh}
+ .lb-art:not(.wide):not(.pap){width:min(100%,calc(70dvh*.8))}
+ .lb-art.pap{max-width:100%}.lb-art.pap img{max-height:70dvh;min-height:0}
+ .lb-cap{width:100%;max-width:560px}.lb-cap h3{font-size:30px}
+}
+/* hero */
+@media (max-width:900px){
+ .hero h1{font-size:clamp(44px,11.5vw,96px);line-height:.92}
+ .hero .stamp{display:none}
+}
+/* fichas dos cases: metadado, não mais um bloco de conteúdo */
+.how{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) minmax(0,1fr);gap:0;margin-top:56px;border:2px solid currentColor}
+.how>div{border-top:0;padding:18px 22px}
+.how>div+div{border-left:2px solid currentColor}
+.how h3{font:700 12px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;line-height:1.3}
+.how p{font-size:16px;line-height:1.5}
+.story p{max-width:none}
+.story h4{font-size:18px}
+.st-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:900px){.how{grid-template-columns:1fr}.how>div+div{border-left:0;border-top:2px solid currentColor}}
+/* Mais Bella */
+.mb-why .mk{display:block;margin-bottom:4px;font-size:20px}
+@media (max-width:700px){.swatches{display:grid;grid-template-columns:repeat(3,1fr);height:auto}.swatches span{min-height:72px}.swatches span:hover{flex:1}}
+/* papelaria: respiro lateral dentro do casamento */
+.paperwork,.pw-strip{margin-left:var(--pad);margin-right:var(--pad)}
+@media (max-width:900px){.env-track{height:170vh}}
+/* contato */
+@media (max-width:700px){.poster h2{font-size:clamp(40px,12.5vw,90px);overflow-wrap:anywhere}}
+@media (max-width:560px){.nav .home{font-size:22px;white-space:nowrap}.nav ul a{font-size:15px}.nav{gap:10px}}
+.kh-id button:focus-visible{outline:3px solid #F6C445;outline-offset:4px}
+.st-steps{gap:28px 40px}
+
+.wed-dig.real{grid-template-columns:auto minmax(0,1fr)}
+.cv-phone{display:flex;flex-direction:column;align-items:center;gap:12px}
+.cv-scroll{position:absolute;inset:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+.cv-scroll::-webkit-scrollbar{display:none}
+.cv-scroll img{display:block;width:100%;height:auto}
+.cv-scroll:focus-visible{outline:3px solid #A3502F;outline-offset:-3px}
+.cv-env{position:absolute;inset:0;border:0;padding:0;background:#B4532F;color:#fff;cursor:pointer;transition:transform .6s cubic-bezier(.6,0,.3,1),opacity .6s;z-index:2}
+.cv-env img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.cv-env.open{transform:translateY(-100%);opacity:.2}
+.cv-env:focus-visible{outline:3px solid #F7F2EA;outline-offset:-6px}
+.cv-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#5E5047}
+.cv-desk{padding:0 var(--pad) 120px}
+.cv-desk .browser .bar{background:#E7DED3}.cv-desk .browser .bar i{background:#cdbfae}
+.cv-desk .lp-scroll{height:min(620px,70vh)}
+.cv-desk .au-cap{color:#2E4352}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.cv-env{transition:none}}
+@media (max-width:900px){.wed-dig.real{grid-template-columns:1fr;justify-items:center}.wed-dig.real>.cv-txt{justify-self:stretch}}
+
+.cv-view{position:absolute;inset:0;overflow:hidden}
+.cv-view.scroll{overflow-y:auto;scrollbar-width:none}
+.cv-loop{display:block;width:100%;height:auto;animation:cvLoop 34s cubic-bezier(.45,0,.55,1) infinite;will-change:transform}
+.cv-loop.paused{animation-play-state:paused}
+@keyframes cvLoop{0%{transform:translateY(0)}11%{transform:translateY(0)}17%{transform:translateY(-14%)}22%{transform:translateY(-14%)}90%{transform:translateY(-85.6%)}100%{transform:translateY(-85.6%)}}
+@media (prefers-reduced-motion:reduce){.cv-loop{animation:none}}
+.mut-dev{width:min(250px,62vw)}.mut-dev .screen img{width:100%;height:auto;display:block}
+.btabs .me,.mut-legend .me{font-style:normal;color:#146A3A;font-size:10px;margin-left:6px;vertical-align:middle}
+.btabs button[aria-pressed=true] .me{color:#fff}
+.mut-legend{font-size:14px;margin:-6px 0 14px}.mut-legend .me{margin:0 4px 0 0}
+.who-grid{display:grid;grid-template-columns:minmax(0,1fr);max-width:900px}
+.who{border-top:2px solid currentColor;padding-top:14px}
+.who ul{list-style:none;padding:0;display:grid;gap:10px;margin:0}
+.who li{font-size:16px;line-height:1.5}
+.me-col li b{color:#F6C445;font-weight:800}
+@media (max-width:900px){.who-grid{grid-template-columns:1fr}}
+
+/* ===== rodada 10: overflow real no celular ===== */
+.wed-dig,.mb2,.mut2,.paperwork,.cv-desk{min-width:0}
+.wed-dig>*,.mb2>*,.cv-phone,.cv-txt,.mb-why{min-width:0;max-width:100%}
+@media (max-width:900px){
+ .wed-dig,.wed-dig.real,.mb2{grid-template-columns:minmax(0,1fr)!important}
+ .wed-dig .device,.mb2 .device{justify-self:center}
+ .cv-txt p,.mb-why p,.facts dd{overflow-wrap:break-word}
+}
+@media (max-width:420px){
+ .nav{padding:8px 12px;gap:8px}
+ .nav .home{font-size:20px}
+ .nav ul{gap:10px}.nav ul a{font-size:14px}
+ .still-btn{width:36px;height:36px;min-height:36px}
+}
+
+.mb-why{grid-template-columns:minmax(0,1fr);width:100%}
+@media (max-width:900px){.roi{grid-template-columns:minmax(0,1fr)!important;justify-items:stretch}.roi>*{min-width:0;width:100%}}
+@media (max-width:380px){.deck{width:clamp(100px,36vw,140px)}.decks{gap:14px}.roi{padding:20px}}
+@media (max-width:340px){.nav ul li:first-child{display:none}}
+
+@media (max-width:600px){.index h2{font-size:clamp(38px,11vw,64px)}.works .t{font-size:clamp(30px,9.5vw,52px)}}
+.trophy h2{font-size:clamp(48px,6.4vw,128px)}
+.trophy h2,.poster h2,.cred b{overflow-wrap:anywhere}
+.cred b{display:block;font-size:clamp(20px,2.2vw,30px)!important}
+@media (min-width:901px){.poster h2{font-size:clamp(56px,7.4vw,120px)}}
+.wed .names,.wed p{overflow-wrap:break-word}
+@media (max-width:340px){.envelope .names{font-size:22px!important}}
+.trophy h2{padding-right:.12em}
+</style>
+</head>
+<body>
+<a class="skip" href="#trabalhos">Pular para os trabalhos</a>
+<div class="scan" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><path id="circ" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs></svg>
+
+<nav class="nav" aria-label="Principal">
+  <a class="home" href="#topo">Ingrid Lima</a>
+  <ul>
+    <li><a href="#trabalhos">Trabalhos</a></li>
+    <li><a href="#ferramentas">Ferramentas</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <button id="still" class="still-btn" type="button" aria-pressed="false" aria-label="Pausar animações" title="Pausar animações"><span class="ic" aria-hidden="true"></span></button>
+</nav>
+
+<main id="topo">
+<section class="hero dark-tx" aria-labelledby="h-hero">
+  <div>
+    <p class="cap" style="color:var(--cinza);margin-bottom:24px">Portfólio 2026 · @briefing.ao.pixel</p>
+    <h1 id="h-hero" class="d">Design pra quem não quer ser mais <button class="g" id="swap" type="button" aria-label="Trocar palavra: um">um.</button></h1>
+    <p class="sub">Sou a Ingrid, designer e social media. Faço identidade visual, posts, landing pages e convites de casamento. Estudo <b>Web Design na FIAP</b> e me formei em Administração, então vou te perguntar do seu cliente antes de abrir o Figma.</p>
+    <p class="award"><i>1º</i> lugar no NEXT FIAP 2026, com Khipu e Aurora</p>
+  </div>
+  <div class="portrait">
+    <div class="duo"><img src="img/ingrid-retrato.webp" alt="Retrato de Ingrid Lima, cabelo cacheado ruivo, olhando para a câmera" width="900" height="1124" fetchpriority="high"></div>
+    <div class="letters" id="letters" aria-hidden="true"></div>
+    <p class="drag-hint" aria-hidden="true">(pode bagunçar as letras)</p>
+  </div>
+  <div class="stamp" aria-hidden="true"><svg viewBox="0 0 150 150"><text font-family="Space Mono" font-weight="700" font-size="13" fill="currentColor"><textPath href="#circ" textLength="358" lengthAdjust="spacing">1º LUGAR · NEXT FIAP 2026 · 1º LUGAR · NEXT FIAP 2026 · </textPath></text></svg><b>1º<br>lugar</b></div>
+</section>
+
+<section class="manifesto paper shadow" aria-label="Como eu penso">
+  <p>Social media ou UI? Faço os dois. Problema de cliente não escolhe lado.</p>
+  <p class="aside">Antes do design, passei anos no mercado financeiro montando apresentação pra investidor. Lá eu vi muito número bom passar batido porque estava mal mostrado. É isso que eu levo pra cada post e cada tela: primeiro entender o que precisa funcionar, depois deixar bonito.</p>
+</section>
+
+<section class="index" id="trabalhos" aria-labelledby="h-idx">
+  <h2 id="h-idx" class="d">Trabalhos <span class="g">escolhidos</span></h2>
+  <ul class="works">
+    <li><a href="#next" data-img="img/next-ingrid.webp"><span class="t">Os shapes do NEXT</span><span class="k">1º lugar no NEXT FIAP 2026</span></a></li>
+    <li><a href="#khipu" data-img="img/khipu-hero.webp"><span class="t">Khipu</span><span class="k">Portal de uma cidade inventada no fundo do mar</span></a></li>
+    <li><a href="#aurora" data-img="img/aurora-hero.webp"><span class="t">Aurora</span><span class="k">Landing page de uma plataforma de RH</span></a></li>
+    <li><a href="#mais-bella" data-img="img/mb-01.webp"><span class="t">Studio Mais Bella</span><span class="k">Rebranding e social media para salão</span></a></li>
+    <li><a href="#casamento" data-peek="casamento"><span class="t">Casamentos</span><span class="k">Papelaria física e convite digital</span></a></li>
+    <li><a href="#mutirao" data-peek="mutirao"><span class="t">Mutirão</span><span class="k">Site pra famílias que dividem o cuidado de alguém</span></a></li>
+    <li><a href="#playground" data-img="img/bp-01.webp"><span class="t">Fora da faculdade</span><span class="k">Meu Instagram e uma agenda online pra manicure</span></a></li>
+  </ul>
+</section>
+<div class="peek" id="peek" aria-hidden="true"><span class="tape"></span><div class="duo" id="peekbox"></div></div>
+
+
+<!-- SHAPES DO NEXT -->
+<section class="trophy dark-tx" id="next" aria-labelledby="h-next">
+  <div class="tr-copy">
+    <p class="cap" style="color:var(--cinza)">NEXT FIAP 2026</p>
+    <h2 id="h-next" class="d cutin">Dois shapes, <span class="g">um pódio.</span></h2>
+    <p class="lede">No NEXT, o maior evento de projetos da FIAP, meu grupo subiu em 1º lugar com o Khipu e com a Aurora. O troféu veio em forma de shape de skate.</p>
+    <div class="rule">
+      <p><b>Regra do grupo:</b> todo projeto da FIAP sai com um chatbot, com o VLibras ou com os dois.</p>
+      <ul><li><a href="#khipu">Khipu</a><span>VLibras + ChasquiBOT, o mensageiro da cidade</span></li><li><a href="#aurora">Aurora</a><span>VLibras + IRIS, assistente com Gemini</span></li><li><a href="#mutirao">Mutirão</a><span>VLibras + PontoBOT</span></li></ul>
+    </div>
+    <p class="mk tr-hint">passa o mouse pra inclinar, clica pra virar</p>
+  </div>
+  <div class="decks">
+    <button class="deck" type="button" aria-pressed="false" aria-label="Shape amarelo do NEXT. Clique para virar e ver a foto">
+      <span class="deck-in">
+        <span class="face front yellow" aria-hidden="true">
+          <svg viewBox="0 0 200 760" preserveAspectRatio="none">
+            <g stroke="#E8187A" stroke-width="7" fill="none" stroke-linecap="square">
+              <path d="M128 -10 L74 250"/><path d="M98 168 L206 236"/>
+              <path d="M58 600 L40 690 L150 746"/><path d="M-10 668 L120 740"/><path d="M-10 700 L70 760"/>
+            </g>
+            <g stroke="#0B0909" stroke-width="15" fill="none">
+              <path d="M52 262 L178 520"/><path d="M8 430 L200 382"/><path d="M14 470 L112 448 L176 560"/>
+            </g>
+            <text x="0" y="0" transform="translate(70 610) rotate(-68)" font-family="Inter,sans-serif" font-weight="400" font-size="34" letter-spacing="3" fill="#0B0909">FIAP</text>
+          </svg>
+        </span>
+        <span class="face back" aria-hidden="true"><span class="sticker"><img src="img/next-ingrid.webp" alt="" loading="lazy" width="1000" height="1333"><em>eu, com os dois shapes</em></span></span>
+      </span>
+    </button>
+    <button class="deck" type="button" aria-pressed="false" aria-label="Shape preto Rock New Ventures. Clique para virar e ver a foto do pódio">
+      <span class="deck-in">
+        <span class="face front black" aria-hidden="true">
+          <span class="rings"></span>
+          <i class="deck-small" style="color:#fff">FIAP</i>
+          <b class="rnv">RNV</b>
+          <span class="dots">• ◦ •</span>
+          <b class="rock">Rock<br><em>New</em><br>Ventures</b>
+          <span class="dots">• ◦ •</span>
+          <i class="start">STARTING UP<br>THE FUTURE</i>
+        </span>
+        <span class="face back" aria-hidden="true"><span class="sticker wide"><img src="img/next-podio.webp" alt="" loading="lazy" width="1400" height="933"><em>pódio: 1º lugar</em></span><span class="sticker wide s2"><img src="img/next-palco.webp" alt="" loading="lazy" width="1400" height="933"><em>premiação no palco</em></span></span>
+      </span>
+    </button>
+  </div>
+  <p class="sr" aria-live="polite" id="deckStatus"></p>
+</section>
+
+<!-- KHIPU -->
+<article class="case kh rip" id="khipu" aria-labelledby="h-kh">
+  <div class="stamp" style="right:var(--pad);top:90px;color:#F6C445" aria-hidden="true"><svg viewBox="0 0 150 150"><text font-family="Space Mono" font-weight="700" font-size="13" fill="currentColor"><textPath href="#circ" textLength="358" lengthAdjust="spacing">1º LUGAR · NEXT FIAP 2026 · 1º LUGAR · NEXT FIAP 2026 · </textPath></text></svg><b>1º<br>lugar</b></div>
+  <p class="lbl cap" style="color:#9cc7bd">FIAP · VR Code Arena · NEXT 2026 · em grupo</p>
+  <h2 id="h-kh" class="d cutin">Khipu</h2>
+  <p class="lede">Um portal pra uma cidade que não existe, no fundo do mar. A gente inventou o mapa, os moradores, a rádio do bairro e até um idioma, o Atlante, que troca na hora.</p>
+  <div class="browser" style="margin-top:48px"><div class="bar"><i></i><i></i><i></i><span>khipu-ctrl-people.vercel.app</span></div><img src="img/khipu-site.webp" alt="Página inicial do portal Khipu: o livro com o sol de Guaraci no fundo do mar, ChasquiBot e Rádio Comunal" loading="lazy" width="2000" height="1250"></div>
+  <div style="margin-top:36px">
+    <q id="khq" lang="pt-BR" class="d" style="display:block;font-size:clamp(40px,6vw,96px);quotes:none">O sol mora no fundo.</q>
+    <div class="lang" role="group" aria-label="Idioma da frase"><button type="button" aria-pressed="true" data-l="pt">PT-BR</button><button type="button" aria-pressed="false" data-l="atl">Atlante</button></div>
+    <p style="margin-top:12px;color:#9cc7bd;font-size:16px">Experimente: a troca de idioma é uma das interações do portal.</p>
+  </div>
+  <div class="thumbs">
+    <button type="button" data-lb="img/khipu-mapa.webp" data-lbt="Mapa de Guaraci" data-lbp="Cada cúpula do mapa leva a uma área do portal."><img src="img/khipu-mapa.webp" alt="Mapa ilustrado da cidade submarina" loading="lazy" width="1100" height="1100"><span>Mapa da cidade</span></button>
+    <button type="button" data-lb="img/khipu-kora.webp" data-lbt="Habitantes" data-lbp="Cada morador tem retrato e história própria."><img src="img/khipu-kora.webp" alt="Retrato de Kora, moradora de Guaraci" loading="lazy" width="800" height="800"><span>Habitantes</span></button>
+    <button type="button" data-lb="img/khipu-hero.webp" data-lbt="Abertura" data-lbp="O submarino acompanha a rolagem na abertura."><img src="img/khipu-hero.webp" alt="Submarino amarelo com baleia e cardume" loading="lazy" width="1800" height="1350"><span>Abertura</span></button>
+  </div>
+
+  <h3 class="d kh-sub">Guaraci, <span class="g">bairro a bairro</span></h3>
+  <p class="kh-note">Cada lugar da cidade ganhou ilustração, nome e função no portal. Toque para ampliar.</p>
+  <div class="strip-scroll" tabindex="0" aria-label="Lugares de Guaraci, role para o lado">
+    <button type="button" class="place" data-lb="img/kh-corte-cidade.webp" data-lbt="Corte da cidade" data-lbp="A cidade em camadas, do fundo até a superfície."><img src="img/kh-corte-cidade.webp" alt="Ilustração: Corte da cidade" loading="lazy" width="1000" height="563"><span>Corte da cidade</span></button><button type="button" class="place" data-lb="img/kh-foto-coracao-do-sol.webp" data-lbt="Coração do Sol" data-lbp="O centro da cidade, onde fica o símbolo do sol."><img src="img/kh-foto-coracao-do-sol.webp" alt="Ilustração: Coração do Sol" loading="lazy" width="1000" height="563"><span>Coração do Sol</span></button><button type="button" class="place" data-lb="img/kh-foto-casa-das-vozes.webp" data-lbt="Casa das Vozes" data-lbp="Sede da rádio comunal do portal."><img src="img/kh-foto-casa-das-vozes.webp" alt="Ilustração: Casa das Vozes" loading="lazy" width="1000" height="563"><span>Casa das Vozes</span></button><button type="button" class="place" data-lb="img/kh-foto-jardins-de-alga.webp" data-lbt="Jardins de Alga" data-lbp="Onde se cultiva a comida de Guaraci."><img src="img/kh-foto-jardins-de-alga.webp" alt="Ilustração: Jardins de Alga" loading="lazy" width="1000" height="563"><span>Jardins de Alga</span></button><button type="button" class="place" data-lb="img/kh-foto-terracos-dagua.webp" data-lbt="Terraços d'Água" data-lbp="Moradias em degraus com cascatas."><img src="img/kh-foto-terracos-dagua.webp" alt="Ilustração: Terraços d'Água" loading="lazy" width="1000" height="563"><span>Terraços d'Água</span></button><button type="button" class="place" data-lb="img/kh-foto-estaleiro.webp" data-lbt="Estaleiro" data-lbp="Onde nascem os submarinos."><img src="img/kh-foto-estaleiro.webp" alt="Ilustração: Estaleiro" loading="lazy" width="1000" height="563"><span>Estaleiro</span></button><button type="button" class="place" data-lb="img/kh-foto-anel-de-fora.webp" data-lbt="Anel de Fora" data-lbp="A borda da cidade, conectando as cúpulas."><img src="img/kh-foto-anel-de-fora.webp" alt="Ilustração: Anel de Fora" loading="lazy" width="1000" height="563"><span>Anel de Fora</span></button>
+  </div>
+  <h3 class="d kh-sub">Quem mora <span class="g">lá</span></h3>
+  <div class="people"><figure><img src="img/khipu-kora.webp" alt="Retrato ilustrado de Kora" loading="lazy" width="600" height="600"><figcaption>Kora</figcaption></figure><figure><img src="img/kh-yara.webp" alt="Retrato ilustrado de Yara" loading="lazy" width="600" height="600"><figcaption>Yara</figcaption></figure><figure><img src="img/kh-beto.webp" alt="Retrato ilustrado de Beto" loading="lazy" width="600" height="600"><figcaption>Beto</figcaption></figure><figure><img src="img/kh-sueli.webp" alt="Retrato ilustrado de Sueli" loading="lazy" width="600" height="600"><figcaption>Sueli</figcaption></figure><figure><img src="img/kh-tito.webp" alt="Retrato ilustrado de Tito" loading="lazy" width="600" height="600"><figcaption>Tito</figcaption></figure><figure><img src="img/kh-zilda.webp" alt="Retrato ilustrado de Zilda" loading="lazy" width="600" height="600"><figcaption>Zilda</figcaption></figure></div>
+  <div class="kh-id">
+    <figure><img src="img/kh-sol.webp" alt="Símbolo do sol de Guaraci, com rosto em estilo andino" loading="lazy" width="600" height="600"><figcaption>O sol, símbolo da cidade. Ele aparece de olho fechado e meio aberto no carregamento do site.</figcaption></figure>
+    <figure><img src="img/kh-sub.webp" alt="Submarino amarelo ilustrado" loading="lazy" width="600" height="379"><figcaption>O submarino que acompanha a rolagem: o visitante "mergulha" pela página.</figcaption></figure>
+    <figure><button type="button" data-lb="img/kh-equipe-submarina.webp" data-lbt="Equipe submarina" data-lbp="A equipe que recebe o visitante na abertura."><img src="img/kh-equipe-submarina.webp" alt="Ilustração da equipe submarina de Guaraci" loading="lazy" width="1400" height="1050"></button><figcaption>A equipe que recebe o visitante.</figcaption></figure>
+  </div>
+  <div class="story">
+    <h3 class="story-t">Por dentro do Khipu</h3>
+    <div class="st-grid">
+      <div><h4>Um idioma inventado</h4><p>O Atlante mistura línguas da América Latina. A gramática vem do quéchua e cada morador fala com palavras de uma língua diferente: a Mestra Zilda usa náuatle, a Sueli do rádio usa guarani, o Tito do mergulho usa quéchua e aimará. A ideia era a cidade parecer feita de muitos povos. Tem glossário próprio e um script que avisa se sobrou alguma frase sem tradução.</p></div>
+      <div><h4>ChasquiBOT</h4><p>Chasqui era o mensageiro dos incas. Aqui ele é o assistente do portal: o morador pergunta e ele indica o lugar, a pessoa ou a seção certa. O motor de busca é nosso, com listas de palavras-chave, e um teste confere se ele acerta as frases de exemplo.</p></div>
+      <div><h4>Rádio Comunal e Mural</h4><p>Uma rádio do bairro tocando dentro do site e um mural de recados entre as cúpulas. Coisas que fazem um portal parecer habitado, não só informativo.</p></div>
+      <div><h4>Movimento com cuidado</h4><p>Peixes, algas e o submarino se mexem, mas toda seção animada respeita quem pediu menos movimento no sistema. Na abertura, o sol da cidade abre o olho enquanto o site carrega.</p></div>
+    </div>
+  </div>
+  <div class="story kh-who">
+    <h3 class="story-t">Minha parte no Khipu</h3>
+    <div class="who-grid">
+      <div class="who me-col"><ul>
+        <li><b>Tipografia e textos.</b> Padronizei títulos, seções e pesos, e revisei os textos, inclusive os caracteres especiais do Atlante.</li>
+        <li><b>Idiomas.</b> A troca entre português e Atlante, os dialetos de cada morador e uma seção com outras línguas da América Latina.</li>
+        <li><b>O Mundo.</b> Indicadores explicados, cards maiores, mapa e bunker ilustrados no mesmo estilo dos habitantes e os tópicos virando perguntas que abrem com a resposta.</li>
+        <li><b>Habitantes.</b> Os 6 líderes com descrição e habilidades. Os turnos viraram as profundidades em que cada um trabalha.</li>
+        <li><b>"Quem pode me ajudar agora?"</b> Pesei IA contra palavras-chave, inclusive o cuidado com LGPD. O ChasquiBOT acabou respondendo por palavras-chave, com testes.</li>
+      </ul></div>
+    </div>
+  </div>
+  <div class="how">
+    <div><h3>O pedido</h3><p>Um portal pra uma cidade fictícia, com moradores espalhados por cúpulas no fundo do mar.</p></div>
+    <div><h3>O que fez diferença</h3><p>Tratar o site como um lugar de verdade: idioma próprio que troca na hora, rádio do bairro, mural de recados e um assistente, o ChasquiBOT.</p></div>
+    <div><h3>Ferramentas</h3><div class="chips"><button type="button" data-tool="Figma"><span>Figma</span></button><button type="button" data-tool="HTML/CSS"><span>HTML/CSS</span></button><button type="button" data-tool="JavaScript"><span>JavaScript</span></button><button type="button" data-tool="GitHub"><span>GitHub</span></button><button type="button" data-tool="Vercel"><span>Vercel</span></button></div></div>
+  </div>
+  <p style="margin-top:28px">Projeto em grupo com Larissa Benedito e Mayla Motobe (Ctrl + People) · <a href="https://khipu-ctrl-people.vercel.app/">ver no ar</a> · <a href="https://github.com/mewmewdevart/AtlantidaFIAPChallenge">código</a></p>
+</article>
+
+<!-- AURORA -->
+<article class="case au rip" id="aurora" aria-labelledby="h-au">
+  <div class="stamp" style="right:var(--pad);top:90px;color:#7A2BB8" aria-hidden="true"><svg viewBox="0 0 150 150"><text font-family="Space Mono" font-weight="700" font-size="13" fill="currentColor"><textPath href="#circ" textLength="358" lengthAdjust="spacing">1º LUGAR · NEXT FIAP 2026 · 1º LUGAR · NEXT FIAP 2026 · </textPath></text></svg><b>1º<br>lugar</b></div>
+  <p class="lbl cap">FIAP × Aurora × Google · Enterprise Challenge · em grupo</p>
+  <h2 id="h-au" class="cutin" style="font-size:clamp(64px,10vw,190px)">Aurora</h2>
+  <p class="lede">A Aurora é uma plataforma de dados de RH. A gente fez a landing page que vende essa plataforma pra diretor de empresa: gente sem tempo, que já ouviu muita promessa. Por isso a página não abre falando de dashboard. Abre perguntando se a empresa está perdendo gente boa.</p>
+  <div class="lp" data-lp>
+    <div class="lp-chaps" role="group" aria-label="Pular para uma parte da landing page">
+      <button type="button" aria-pressed="true" data-y="0" data-cap="Abertura: uma frase com a promessa e um botão só, pedir demonstração.">Abertura</button>
+      <button type="button" aria-pressed="false" data-y="1628" data-cap="Cenários: antes de falar do produto, a página descreve situações que o diretor reconhece. Ele se vê ali e continua lendo.">Cenários</button>
+      <button type="button" aria-pressed="false" data-y="2529" data-cap="Na prática: cada dor vira uma mudança concreta, em lista curta, sem jargão de RH.">Na prática</button>
+      <button type="button" aria-pressed="false" data-y="3710" data-cap="Depoimentos: quem usa conta, com nome e cargo, logo depois da promessa.">Depoimentos</button>
+      <button type="button" aria-pressed="false" data-y="4398" data-cap="Simulador: o diretor coloca os números da empresa e vê quanto as saídas custam. Recriei ele logo abaixo.">Simulador</button>
+      <button type="button" aria-pressed="false" data-y="6410" data-cap="Como funciona: poucos passos, porque quem decide quer saber o tamanho do esforço antes de topar.">Como funciona</button>
+      <button type="button" aria-pressed="false" data-y="6902" data-cap="Demonstração: formulário dividido em etapas, pra ninguém dar de cara com dez campos de uma vez.">Formulário</button>
+      <button type="button" aria-pressed="false" data-y="7694" data-cap="Dúvidas: as objeções mais comuns respondidas no fim, onde a pessoa já está quase decidindo.">Dúvidas</button>
+    </div>
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>aurora-ctrl-people-2026.vercel.app</span></div>
+      <div class="lp-scroll" tabindex="0" role="region" aria-label="Landing page da Aurora inteira. Role dentro do quadro ou use os botões acima"><img src="img/aurora-lp-full.webp" width="2000" height="12968" loading="lazy" alt="Landing page da Aurora completa: abertura com a promessa, cenários, mudanças na prática, depoimentos, simulador de custo, resultados, como funciona, formulário de demonstração e perguntas frequentes"></div>
+    </div>
+    <p class="au-cap lp-cap" aria-live="polite">Abertura: uma frase com a promessa e um botão só, pedir demonstração.</p>
+  </div>
+  <div class="roi" aria-labelledby="roi-t">
+    <div>
+      <p id="roi-t" style="font-weight:800;font-size:22px">O simulador, recriado aqui</p>
+      <p style="color:#6B5A99;font-size:15px;margin-top:4px">Coloque os números de uma empresa e veja o que a landing mostra pro diretor:</p>
+      <label for="r1">Pessoas na empresa: <span id="r1v">200</span></label><input id="r1" type="range" min="50" max="2000" step="50" value="200">
+      <label for="r2">Turnover ao ano: <span id="r2v">18</span>%</label><input id="r2" type="range" min="2" max="50" value="18">
+      <label for="r3">Salário médio: R$ <span id="r3v">4.000</span></label><input id="r3" type="range" min="1500" max="20000" step="500" value="4000">
+    </div>
+    <div aria-live="polite">
+      <output id="roiOut">R$ 0</output>
+      <small>custo estimado das saídas por ano (cálculo ilustrativo: cada saída custando cerca de 1,5 salário anual).</small><div class="roi-bars" aria-hidden="true"><span style="--w:30%">Recrutamento</span><span style="--w:25%">Onboarding</span><span style="--w:45%">Produtividade perdida</span></div><p class="roi-split" id="roiSplit"></p>
+    </div>
+  </div>
+  <div class="story au-story">
+    <h3 class="story-t">Como a Aurora chegou até aqui</h3>
+    <ol class="st-steps">
+      <li><h4>Uma colagem no Figma</h4><p>Antes do código, a Aurora era um "Frankenstein": juntamos pedaços de landing pages de HR tech, apps de hábito e cursos online, seção por seção. A estrutura que saiu dali é praticamente a mesma que foi pro ar.</p></li>
+      <li><h4>O roadmap entregue antes</h4><p>Na primeira etapa, VLibras e chatbot eram só "evoluções previstas". Na segunda, viraram funcionalidade: o VLibras traduz o site pra Libras e a IRIS responde dúvidas usando a API do Gemini, com proteção contra prompt injection.</p></li>
+      <li><h4>Auditoria</h4><p>Na terceira etapa, com tudo no ar, a gente revisou: 18 pontos de qualidade corrigidos, imagens mais de 85% mais leves, skip links, foco preso nos modais, legendas nos vídeos e carrossel que para quando a pessoa passa o mouse ou pede menos movimento. São cerca de 10 mil linhas sem template nem framework de CSS.</p></li>
+    </ol>
+    <div class="st-grid two">
+      <div><h4>O simulador que precisou ser refeito</h4><p>A primeira versão mostrava um "ROI" abstrato. Testando, vimos que ninguém sabia de onde vinha o número nem se aquele investimento era o preço da Aurora, que nem existe ainda. Refizemos abrindo o custo em recrutamento, onboarding e produtividade perdida, com as premissas explicadas e nenhum preço inventado. Foi uma decisão de honestidade antes de ser de design.</p></div>
+      <div><h4>Limitação à mostra</h4><p>O backend da IRIS está pronto e documentado, mas ficou desligado no site publicado, pra não gerar custo nem expor chave de API. Em vez de fingir que funciona, a página explica. O formulário segue a mesma linha: aceita só e-mail corporativo, sugere só dias úteis e avisa que é um envio simulado.</p></div>
+    </div>
+  </div>
+  <div class="how">
+    <div><h3>Pra quem</h3><p>CHROs e CEOs de empresas médias e grandes, que precisam ver dinheiro antes de ver gráfico.</p></div>
+    <div><h3>O que eu puxei no grupo</h3><p>A ordem da página (dor, custo, solução), o simulador e a acessibilidade: VLibras, IRIS, navegação por teclado, movimento reduzido e WCAG 2.1, com contraste AAA nos textos. A imagem principal caiu de 834 KB pra 50 KB.</p></div>
+    <div><h3>Ferramentas</h3><div class="chips"><button type="button" data-tool="Figma"><span>Figma</span></button><button type="button" data-tool="Canva"><span>Canva</span></button><button type="button" data-tool="HTML/CSS"><span>HTML/CSS</span></button><button type="button" data-tool="JavaScript"><span>JavaScript</span></button><button type="button" data-tool="Acessibilidade"><span>Acessibilidade</span></button><button type="button" data-tool="Vercel"><span>Vercel</span></button></div></div>
+  </div>
+  <p style="margin-top:28px">Minha parte: ordem da página, direção visual, simulador e acessibilidade. Projeto em grupo com Larissa Benedito e Mayla Motobe (Ctrl + People) · <a href="https://aurora-ctrl-people-2026.vercel.app/">ver no ar</a> · <a href="https://github.com/mewmewdevart/AuroraFIAPChallenge">código</a></p>
+</article>
+
+<!-- MAIS BELLA -->
+<article class="case mb rip" id="mais-bella" aria-labelledby="h-mb">
+  <div class="mb-head">
+    <div>
+      <p class="lbl cap">Cliente · Branding + social media · 2026</p>
+      <h2 id="h-mb" class="cutin">Studio Mais Bella</h2>
+      <p class="lede">A Sandra tem 16 anos de salão no bairro e queria virar referência em saúde capilar sem assustar a cliente que vem há anos fazer escova. O trabalho foi mudar a cara do salão sem mudar quem ele atende.</p>
+    </div>
+    <p class="note">a maioria das clientes tem mais de 50 anos. Então: letra grande, frase curta e nenhum termo que precise de explicação.</p>
+  </div>
+  <div class="swatches" aria-label="Paleta da marca"><span style="background:#D6CBB6">Bege acolhedor</span><span style="background:#9AA288">Sálvia</span><span style="background:#6E7A5E;color:#fff">Alecrim</span><span style="background:#7C704E;color:#fff">Oliva</span><span style="background:#CC8D49">Terracota</span><span style="background:#2B2820;color:#E9C997">Raiz</span></div>
+  <div class="mb2">
+    <div class="device"><div class="screen"><div class="ig">
+      <div class="top"><div class="av">Mais Bella</div><div class="nums"><div><b>10</b>posts</div><div><b>—</b>seguidores</div><div><b>—</b>seguindo</div></div></div>
+      <p class="bio"><b>@maisbellacabelos</b><br>Clínica-boutique de saúde capilar · corte, cor e tratamento<br>terça a domingo, 10h às 18h</p>
+      <div class="grid" id="feed" aria-label="Feed do Instagram. Toque num post para ampliar"></div>
+    </div></div></div>
+    <div class="mb-why">
+      <p><span class="mk">toque num post do feed</span>Ele abre grande, com o porquê de cada decisão.</p>
+      <dl class="facts" style="margin-top:0">
+        <div><dt>Entregas</dt><dd>Logo, paleta, brandbook, posts, stories, roteiros e plano de transição do Instagram</dd></div>
+        <div><dt>Regras que criei</dt><dd>Logo pequeno no canto, título grande e uma ideia por post</dd></div>
+        <div><dt>Ferramentas</dt><dd><span class="chips"><button type="button" data-tool="Figma"><span>Figma</span></button><button type="button" data-tool="Canva"><span>Canva</span></button></span></dd></div>
+      </dl>
+    </div>
+  </div>
+</article>
+
+<!-- CASAMENTOS -->
+<article class="case wed rip" id="casamento" aria-labelledby="h-wed">
+  <div class="wed-intro">
+    <div>
+      <p class="lbl cap">Clientes · Papelaria e convite digital · 2026</p>
+      <h2 id="h-wed" class="cutin" style="font-size:clamp(56px,9vw,160px)">Casamentos</h2>
+    </div>
+    <p class="lede">O convite é a primeira coisa do casamento que chega na mão do convidado. Cada casal ganha monograma, paleta e tipografia, e tudo conversa: do save the date à tag do padrinho, do papel ao celular. <i>Nomes, datas e endereços daqui são inventados.</i></p>
+  </div>
+  <div class="env-track" id="envTrack">
+    <div class="env-stage">
+      <div class="envelope" id="envelope" role="img" aria-label="Envelope que se abre ao rolar a página, revelando o convite impresso de Helena e Rafael, exemplo fictício">
+        <div class="env-back"></div>
+        <div class="card">
+          <p class="mono">H <span>&amp;</span> R</p>
+          <p style="font-style:italic;margin-top:4px;font-size:clamp(13px,1.4vw,17px)">convidam para o casamento de</p>
+          <p class="names">Helena &amp; Rafael</p>
+          <div class="date"><span>Sábado</span><b>13</b><span>Março</span></div>
+          <p style="font-family:'Bodoni Moda';letter-spacing:.4em;font-size:clamp(11px,1.2vw,14px);margin-top:8px">2027 · 16 HORAS</p>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap" id="flap"></div>
+        <div class="seal">H&amp;R</div>
+      </div>
+    </div>
+  </div>
+<div class="paperwork">
+    <div class="flat real" role="group" aria-label="Papelaria física de Helena e Rafael sobre a mesa. Toque numa peça para ampliar"><button type="button" class="pz" style="left:3%;top:5%;width:30%;rotate:-4deg" data-lb="img/pap-convite.webp" data-lbt="Convite" data-lbp="15 × 18 cm, com a ilustração do lugar e QR codes no verso."><img src="img/pap-convite.webp" alt="Convite de Helena e Rafael" width="444" height="529" loading="lazy"></button><button type="button" class="pz" style="left:35%;top:3%;width:23%;rotate:3deg" data-lb="img/pap-manual-capa.webp" data-lbt="Manual dos padrinhos" data-lbp="10 × 10 cm, 12 páginas: horário, traje, paleta e um mimo pra cada um."><img src="img/pap-manual-capa.webp" alt="Capa do manual dos padrinhos" width="301" height="301" loading="lazy"></button><button type="button" class="pz" style="right:2%;top:2%;width:27%;rotate:-2deg" data-lb="img/pap-leque.webp" data-lbt="Leque com o programa" data-lbp="Raquete de 20 cm: frente com o casal, verso com a ordem da cerimônia."><img src="img/pap-leque.webp" alt="Leque redondo com os nomes do casal" width="500" height="500" loading="lazy"></button><button type="button" class="pz" style="left:37%;top:50%;width:11%;rotate:8deg" data-lb="img/pap-lagrimas.webp" data-lbt="Lágrimas de alegria" data-lbp="Tag de 6 × 9 cm presa no lencinho entregue na cerimônia."><img src="img/pap-lagrimas.webp" alt="Tag para as lágrimas de alegria" width="171" height="256" loading="lazy"></button><button type="button" class="pz" style="left:61%;top:38%;width:13%;rotate:-3deg" data-lb="img/pap-menu.webp" data-lbt="Cardápio" data-lbp="10 × 21 cm, um por mesa."><img src="img/pap-menu.webp" alt="Cardápio da festa" width="239" height="500" loading="lazy"></button><button type="button" class="pz" style="left:49%;top:60%;width:10.5%;rotate:-7deg" data-lb="img/pap-tag.webp" data-lbt="Tag da lembrancinha" data-lbp="6 × 9 cm, com nome e data."><img src="img/pap-tag.webp" alt="Tag de lembrancinha" width="171" height="256" loading="lazy"></button><button type="button" class="pz" style="left:4%;top:66%;width:30%;rotate:3deg" data-lb="img/pap-obrigado.webp" data-lbt="Cartão de agradecimento" data-lbp="15 × 10 cm, com espaço pra foto do casal."><img src="img/pap-obrigado.webp" alt="Cartão de agradecimento" width="426" height="284" loading="lazy"></button><button type="button" class="pz" style="right:3%;top:42%;width:22%;rotate:5deg" data-lb="img/pap-jornal-1.webp" data-lbt="Jornal do Sim" data-lbp="Jornalzinho de 4 páginas em A3 dobrada: história do casal, programação, cardápio e passatempos."><img src="img/pap-jornal-1.webp" alt="Capa do Jornal do Sim" width="295" height="417" loading="lazy"></button></div>
+    <div class="pw-txt">
+      <p class="d" style="font-size:clamp(36px,4.4vw,64px);color:#2E4352;font-family:'Bodoni Moda';text-transform:none;font-weight:400">Papelaria física</p>
+      <p style="font-family:'Cormorant Garamond';font-size:21px;margin-top:12px;max-width:40ch">Eu desenho cada peça e entrego o arquivo final pronto pra gráfica. Não imprimo, mas tenho parceria com uma gráfica: quem contrata as duas coisas juntas paga menos do que fechando separado.</p>
+      <p style="margin-top:14px;font-size:15px">Peças reais de um casamento que eu fiz. Troquei nomes, data, local e fotos pra preservar o casal.</p>
+    </div>
+  </div>
+<div class="pw-strip" aria-label="Mais peças"><button type="button" data-lb="img/pap-convite-verso.webp" data-lbt="Convite, verso" data-lbp="QR codes pra confirmar presença, ver o caminho e a lista de presentes."><img src="img/pap-convite-verso.webp" alt="Convite, verso" loading="lazy"><span>Convite, verso</span></button><button type="button" data-lb="img/pap-placa.webp" data-lbt="Placa de boas-vindas" data-lbp="60 × 90 cm em arco, na entrada da cerimônia."><img src="img/pap-placa.webp" alt="Placa de boas-vindas" loading="lazy"><span>Placa de boas-vindas</span></button><button type="button" data-lb="img/pap-manual-dia.webp" data-lbt="Manual · nosso grande dia" data-lbp="Data, local e horário em uma página só."><img src="img/pap-manual-dia.webp" alt="Manual · nosso grande dia" loading="lazy"><span>Manual · nosso grande dia</span></button><button type="button" data-lb="img/pap-manual-mimos.webp" data-lbt="Manual · um detalhe pra cada um" data-lbp="O presente de cada padrinho e madrinha."><img src="img/pap-manual-mimos.webp" alt="Manual · um detalhe pra cada um" loading="lazy"><span>Manual · um detalhe pra cada um</span></button><button type="button" data-lb="img/pap-manual-fim.webp" data-lbt="Manual · mal podemos esperar" data-lbp="Página final com foto do casal."><img src="img/pap-manual-fim.webp" alt="Manual · mal podemos esperar" loading="lazy"><span>Manual · mal podemos esperar</span></button><button type="button" data-lb="img/pap-jornal-2.webp" data-lbt="Jornal · nossa história" data-lbp="Como o casal se conheceu, linha do tempo e perguntas rápidas."><img src="img/pap-jornal-2.webp" alt="Jornal · nossa história" loading="lazy"><span>Jornal · nossa história</span></button><button type="button" data-lb="img/pap-jornal-3.webp" data-lbt="Jornal · programação" data-lbp="Horários do dia e homenagem."><img src="img/pap-jornal-3.webp" alt="Jornal · programação" loading="lazy"><span>Jornal · programação</span></button><button type="button" data-lb="img/pap-jornal-4.webp" data-lbt="Jornal · festa e passatempos" data-lbp="Cardápio, caça-palavras e "quem é mais provável"."><img src="img/pap-jornal-4.webp" alt="Jornal · festa e passatempos" loading="lazy"><span>Jornal · festa e passatempos</span></button></div>
+  <div class="wed-dig real">
+    <div class="cv-phone">
+      <div class="device"><div class="screen" style="background:#F7F2EA">
+        <div class="cv-view" id="cvView" tabindex="-1" role="img" aria-label="Vídeo do convite digital no celular: o envelope fechado com selo de cera se abre e a página rola por monograma, data e local, programação, calendário, contagem regressiva, traje, presentes e confirmação"><img class="cv-loop" id="cvLoop" src="img/conv-m-loop.webp" width="780" height="12063" loading="lazy" alt=""></div>
+      </div></div>
+      <button class="play-btn" id="cvBtn" type="button" aria-pressed="false">Pausar o vídeo</button>
+    </div>
+    <div class="cv-txt">
+      <p class="d" style="font-size:clamp(40px,5vw,80px);color:#2E4352;font-family:'Bodoni Moda';text-transform:none;font-weight:400">Convite digital</p>
+      <p style="font-family:'Cormorant Garamond';font-size:22px;margin-top:14px;max-width:40ch">A papelaria vira um site. O convidado recebe um envelope fechado, toca no selo de cera e o convite se abre com música, data e local, programação, calendário, contagem regressiva, traje, lista de presentes e confirmação de presença num toque.</p>
+      <dl class="facts">
+        <div><dt>Decisões</dt><dd>Dress code com as cores proibidas desenhadas, pra ninguém ter dúvida. Botão de rota direto pro mapa. Uma tela por assunto, na ordem em que o convidado precisa da informação.</dd></div>
+        <div><dt>Versões</dt><dd>Celular e computador, envelope fechado, abrindo e aberto</dd></div>
+        <div><dt>Ferramentas</dt><dd><span class="chips"><button type="button" data-tool="Figma"><span>Figma</span></button><button type="button" data-tool="HTML/CSS"><span>HTML/CSS</span></button><button type="button" data-tool="JavaScript"><span>JavaScript</span></button></span></dd></div>
+      </dl>
+      <p style="margin-top:18px;font-size:15px">Telas reais do projeto, com nomes, data, local e fotos trocados.</p>
+    </div>
+  </div>
+  <div class="cv-desk">
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>convite · helena-e-rafael</span></div>
+      <div class="lp-scroll" tabindex="0" role="region" aria-label="Convite digital no computador. Role dentro do quadro"><img src="img/conv-d-aberto.webp" width="2160" height="6748" loading="lazy" alt="Convite digital no computador, organizado em cartões lado a lado"></div>
+    </div>
+    <p class="au-cap">No computador, as mesmas informações viram cartões em duas colunas.</p>
+  </div>
+</article>
+
+<!-- MUTIRÃO -->
+<article class="case mt" id="mutirao" aria-labelledby="h-mut">
+  <p class="lbl cap">FIAP · Global Solution 2026 · Citizen Tech · em grupo</p>
+  <h2 id="h-mut" class="d cutin">Mutirão</h2>
+  <div class="mut-intro">
+    <p class="lede">Quando alguém da família passa a precisar de cuidado, a rotina vai parar no grupo do WhatsApp. Quem leva no médico? O remédio da noite já foi dado? Cadê a receita? O Mutirão organiza isso entre várias pessoas, sem ninguém virar gerente do cuidado sozinho.</p>
+    <blockquote class="mut-q">O cuidar fica mais leve quando formamos um mutirão.<span>slogan do projeto</span></blockquote>
+  </div>
+
+  <div class="mut-top">
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>mutirao-ctrlpeople-citizen-tech-26.vercel.app</span></div>
+      <div class="lp-scroll" tabindex="0" role="region" aria-label="Página inicial do Mutirão inteira. Role dentro do quadro"><img src="img/mutirao-lp-full.webp" width="2000" height="7864" loading="lazy" alt="Página inicial do Mutirão: chamada principal com os mascotes, como funciona, recursos e convite para começar"></div>
+    </div>
+    <div class="device mut-dev"><div class="screen"><img src="img/mut-m-home.webp" width="780" height="1688" loading="lazy" alt="Tela inicial do Mutirão no celular: aviso de horário sem ninguém das 12h às 13h, remédio acabando e quem cuida agora"></div></div>
+  </div>
+
+  <ul class="mut-data">
+    <li><b>5</b>familiares entrevistados, todos cuidando de alguém com mais de 75 anos</li>
+    <li><b>4 de 5</b>deram nota máxima quando perguntamos se usariam</li>
+    <li><b>34,9%</b>das mulheres cuidam de alguém, contra 23,3% dos homens <small>PNAD 2022</small></li>
+    <li><b>94,1%</b>de quem cuida no dia a dia é da própria família <small>ELSI-Brasil</small></li>
+  </ul>
+
+  <h3 class="mut-h">As telas, e por que cada uma existe</h3><p class="mut-legend"><i class="me" aria-hidden="true">●</i> telas que eu desenhei</p>
+  <div class="shots" data-shots>
+    <div class="btabs" role="group" aria-label="Telas do Mutirão. As marcadas com ponto são minhas"><button type="button" aria-pressed="true" data-src="img/mut-home.webp" data-alt="Tela Cuidados de hoje com alerta vermelho de horário sem ninguém das 12h às 13h" data-cap="Minha tela. Cuidados de hoje: a primeira coisa que aparece é o buraco na escala. Aqui, ninguém está com a Mari entre 12h e 13h.">Hoje<i class=me aria-hidden=true>●</i></button><button type="button" aria-pressed="false" data-src="img/mut-medicamentos.webp" data-alt="Tela de remédios organizada como um porta-comprimidos por horário" data-cap="Minha tela. Remédios: organizados por horário, como a caixinha de comprimido de verdade. Quem cuida reconhece sem precisar aprender nada. Avisa também quando o estoque está acabando.">Remédios<i class=me aria-hidden=true>●</i></button><button type="button" aria-pressed="false" data-src="img/mut-perfil.webp" data-alt="Perfil de quem cuida com foto, papel na rede e preferência de contato" data-cap="Minha tela. Perfil de quem cuida: cada pessoa diz como prefere ser avisada (mensagem ou ligação) e o que pode assumir. Evita cobrança no grupo.">Perfil<i class=me aria-hidden=true>●</i></button><button type="button" aria-pressed="false" data-src="img/mut-pessoas.webp" data-alt="Lista de pessoas da rede de cuidado com vínculo e papel de cada uma" data-cap="Minha tela. Pessoas da rede: quem faz parte, qual o vínculo e o papel de cada um. Convidar alguém é um botão só.">Rede<i class=me aria-hidden=true>●</i></button><button type="button" aria-pressed="false" data-src="img/mut-recurso-agenda.webp" data-alt="Agenda do mês com dias marcados e tarefas do dia ao lado" data-cap="Escala: separamos horário vazio (ninguém se ofereceu) de lacuna (alguém desmarcou). São problemas diferentes e pedem conversas diferentes.">Escala</button><button type="button" aria-pressed="false" data-src="img/mut-ficha.webp" data-alt="Ficha de quem recebe cuidado com foto, alerta de alergia e diário do turno" data-cap="Ficha: alergias e dados de saúde num lugar só, com o diário de turno pra quem chega saber o que aconteceu. Dados sensíveis ficam escondidos até alguém pedir pra ver.">Ficha</button><button type="button" aria-pressed="false" data-src="img/mut-direitos.webp" data-alt="Página de direitos e serviços com busca por CEP" data-cap="Direitos: pelo CEP, a página mostra serviços e benefícios que valem na cidade da pessoa. Quase ninguém sabe a que tem direito.">Direitos</button><button type="button" aria-pressed="false" data-src="img/mut-recurso-documentos.webp" data-alt="Lista de documentos com receita, ficha de atendimento e hemograma" data-cap="Documentos: receita, exame e ficha de atendimento achados por busca, em vez de rolar o grupo atrás de uma foto.">Documentos</button><button type="button" aria-pressed="false" data-src="img/mut-recurso-compartilhar.webp" data-alt="Janela de compartilhar resumo com opções de copiar, WhatsApp e e-mail" data-cap="Compartilhar: a família já conversa no WhatsApp, então o Mutirão manda o resumo pra lá. A agenda também sai em .ics pro calendário de cada um.">Compartilhar</button><button type="button" aria-pressed="false" data-src="img/mut-recurso-acessibilidade.webp" data-alt="Painel de ajustes de leitura com tamanho do texto, contraste e espaçamento" data-cap="Ajustes de leitura: texto de 80% a 140%, alto contraste, destaque de links e mais espaço entre linhas. Quem cuida muitas vezes também é idoso.">Leitura</button></div>
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>mutirao · área de quem cuida</span></div><img class="shot-img" src="img/mut-home.webp" width="2000" height="1142" loading="lazy" alt="Tela Cuidados de hoje com alerta vermelho de horário sem ninguém das 12h às 13h"></div>
+    <p class="au-cap shot-cap" aria-live="polite">Minha tela. Cuidados de hoje: a primeira coisa que aparece é o buraco na escala. Aqui, ninguém está com a Mari entre 12h e 13h.</p>
+  </div>
+
+  <div class="mut-more">
+    <div>
+      <h3>Dois jeitos de ver</h3>
+      <p>Tema Neutro, mais sóbrio, e tema Acolhedor, com letra manuscrita e verde. A pessoa escolhe o que deixa ela mais à vontade.</p>
+      <div class="themes"><span style="background:#4B5DA9;color:#fff;font-family:Inter">Neutro</span><span style="background:#146A3A;color:#fff;font-family:Gloock">Acolhedor</span></div>
+    </div>
+    <div>
+      <h3>Acessível de verdade</h3>
+      <p>VLibras, ajuste de leitura, navegação por teclado e o PontoBOT, assistente com Gemini que continua respondendo o básico mesmo se a IA cair. Tem 33 testes automatizados conferindo que nada quebrou.</p>
+    </div>
+    <div class="stick">
+      <h3>Os mascotes</h3>
+      <div class="figs"><img src="img/mut-aninha-coracao.webp" alt="Figurinha da mascote Aninha com coração" width="120" height="120" loading="lazy"><img src="img/mut-bea-abraco.webp" alt="Figurinha da mascote Bea dando abraço" width="120" height="120" loading="lazy"><img src="img/mut-mascotes.svg" alt="Os mascotes do Mutirão juntos" width="200" height="120" loading="lazy"></div>
+    </div>
+  </div>
+
+  <p class="mut-role">A ideia foi minha: levei pro grupo e a gente dividiu as telas. Desenhei Início, Perfil de quem cuida, Remédios e Pessoas da rede. Projeto em grupo com Larissa Benedito e Mayla Motobe (Ctrl + People) · <a href="https://mutirao-ctrlpeople-citizen-tech-26.vercel.app/">ver no ar</a> · <a href="https://github.com/mewmewdevart/CitizenTechFIAPChallenge">repositório</a> · <a href="https://youtu.be/7w-m8GREtlQ">vídeo-pitch</a></p>
+</article>
+
+<!-- PLAYGROUND -->
+<section class="play dark-tx" id="playground" aria-labelledby="h-play">
+  <h2 id="h-play" class="d">Fora da <span class="g">faculdade</span></h2>
+  <p class="play-intro">Dois projetos menores que eu gosto muito: o meu próprio Instagram e a agenda online que estou desenhando pra minha manicure.</p>
+
+  <div class="mb2 bp-ig">
+    <div class="device"><div class="screen"><div class="ig bp">
+      <div class="top"><div class="av">b.a.p</div><div class="nums"><div><b>8</b>posts</div><div><b>—</b>seguidores</div><div><b>—</b>seguindo</div></div></div>
+      <p class="bio"><b>@briefing.ao.pixel</b><br>Ingrid Lima · designer e social media<br>LP, social media e branding pra quem não quer ser mais um</p>
+      <div class="grid" id="feed2" aria-label="Feed do @briefing.ao.pixel. Toque num post para ampliar"></div>
+    </div></div></div>
+    <div class="mb-why">
+      <h3 class="d" style="font-size:clamp(26px,7.4vw,60px);overflow-wrap:anywhere">@briefing.ao.pixel</h3>
+      <p>Meu perfil de designer. Cada post parece uma folha de fanzine: papel amassado, fita, xerox, gótico e vermelho com preto, que é o que eu escuto e o que eu sou. Dá pra reconhecer de longe no feed.</p>
+      <dl class="facts" style="margin-top:0">
+        <div><dt>Ideia</dt><dd>Mostrar processo e opinião, não só peça pronta</dd></div>
+        <div><dt>Regras</dt><dd>Uma ideia por post, título que dá pra ler na miniatura, nada de efeito sem motivo</dd></div>
+        <div><dt>Ferramentas</dt><dd><span class="chips"><button type="button" data-tool="Figma"><span>Figma</span></button><button type="button" data-tool="Social media"><span>Social media</span></button></span></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="bn" aria-labelledby="h-bn">
+    <div class="bn-head">
+      <h3 id="h-bn" class="bn-t">Bella <i>nails</i></h3>
+      <p>A Isabela atende sozinha e marcava tudo por mensagem, respondendo entre uma cliente e outra. Estou desenhando uma agenda em que a cliente marca sozinha e a Isabela só confere.</p>
+    </div>
+    <ol class="bn-steps">
+      <li><img src="img/bn-m-login.webp" width="540" height="1169" loading="lazy" alt="Entrada da agenda pedindo celular e dia do aniversário"><b>Entrada</b>Celular e dia do aniversário. Sem senha pra esquecer.</li>
+      <li><img src="img/bn-m-servico.webp" width="540" height="1169" loading="lazy" alt="Passo 1, escolha do serviço, com banho de gel selecionado"><b>Serviço</b>Dá pra escolher mais de um. A agenda soma o tempo sozinha.</li>
+      <li><img src="img/bn-m-dia.webp" width="540" height="1169" loading="lazy" alt="Passo 2, escolha do dia, em cartões em formato de arco"><b>Dia</b>Só aparecem os dias em que cabe tudo que ela escolheu.</li>
+      <li><img src="img/bn-m-hora.webp" width="540" height="1169" loading="lazy" alt="Passo 3, escolha do horário, com 14h30 selecionado"><b>Horário</b>Todos os horários mostrados já têm o tempo necessário.</li>
+      <li><img src="img/bn-m-confira.webp" width="540" height="1169" loading="lazy" alt="Passo 4, resumo com data, horário e serviço"><b>Confere</b>Resumo antes de marcar e a política de atendimento pra aceitar.</li>
+    </ol>
+    <div class="shots bn-desk" data-shots>
+      <div class="btabs" role="group" aria-label="Telas da Bella Nails no computador">
+        <button type="button" aria-pressed="true" data-src="img/bn-d-home.webp" data-alt="Início da cliente: bem-vinda, Maria, com botão de marcar horário" data-cap="Lado da cliente: um botão principal, marcar horário, e os horários que ela já tem.">Cliente</button>
+        <button type="button" aria-pressed="false" data-src="img/bn-d-dia.webp" data-alt="Escolha do dia no computador, com os dias da semana em arcos" data-cap="Os mesmos passos no computador, com mais dias à vista.">Escolher dia</button>
+        <button type="button" aria-pressed="false" data-src="img/bn-d-pro2.webp" data-alt="Agenda da profissional com o dia 25 aberto e uma cliente marcada" data-cap="Lado da Isabela: a semana inteira, cada dia com o que está livre. O telefone da cliente aparece escondido até ela tocar em mostrar. Só quem está cadastrado consegue marcar.">Lado da Isabela</button>
+      </div>
+      <div class="browser"><div class="bar"><i></i><i></i><i></i><span>agenda bella nails</span></div><img class="shot-img" src="img/bn-d-home.webp" width="2000" height="1250" loading="lazy" alt="Início da cliente: bem-vinda, Maria, com botão de marcar horário"></div>
+      <p class="au-cap shot-cap" aria-live="polite">Lado da cliente: um botão principal, marcar horário, e os horários que ela já tem.</p>
+    </div>
+    <p class="bn-foot">Antes do primeiro horário, a cliente lê numa frase o que acontece com os dados dela. Paleta sálvia, ferrugem e café, letra grande e botões largos. <span class="pend">em andamento</span></p>
+  </div>
+</section>
+
+<!-- FERRAMENTAS -->
+<section class="tools dark-tx rip" style="background:var(--tinta)" id="ferramentas" aria-labelledby="h-tools">
+  <h2 id="h-tools" class="d">Caixa de <span class="g">ferramentas</span></h2>
+  <p style="color:var(--cinza);max-width:50ch;margin-top:18px">Toque numa ferramenta para ver onde eu usei.</p>
+  <div class="toolgrid">
+    <div class="kit" id="kit"></div>
+    <div class="toolout paper shadow" aria-live="polite" id="toolout"><h3>Escolha uma</h3><p>Cada ferramenta mostra os projetos desta página em que ela entrou.</p></div>
+  </div>
+  <ol class="cred" aria-label="Formação e conquistas">
+    <li><b>Administração</b><span>Graduação concluída. É de onde vem o pensamento de negócio, público e resultado.</span></li>
+    <li><b>Web Design · FIAP</b><span>Em andamento. UX, UI, front-end e projetos em equipe com empresas parceiras.</span></li>
+    <li><b>1º lugar · NEXT FIAP 2026</b><span>Com Khipu e Aurora, no maior evento de projetos da FIAP.</span></li>
+  </ol>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="sobre" aria-labelledby="h-sobre">
+  <div class="photo"><span class="tape"></span><img src="img/ingrid-next.webp" alt="Ingrid Lima no NEXT FIAP, de óculos e cabelo cacheado vermelho, concentrada no notebook" loading="lazy" width="1066" height="1600"></div>
+  <div>
+    <h2 id="h-sobre" class="d">Prazer, <span class="g">Ingrid.</span></h2>
+    <div class="txt">
+      <p>Antes do design, eu fazia apresentação pra investidor no mercado financeiro. Era ali que eu me pegava ajeitando cor, fonte e diagramação pra deixar número chato interessante. Eu só ainda não chamava isso de design.</p>
+      <p>Com a <b>Administração</b> concluída e nenhuma vontade de voltar pro corporativo, resolvi apostar no que eu sempre quis fazer. Dei um salto de fé e fui estudar <b>Web Design na FIAP</b>.</p>
+      <p>Nos projetos da faculdade, as decisões de layout e a curadoria de acessibilidade costumam ficar comigo. Minha regra é simples: <b>se precisa explicar, ainda não está pronto</b>. Foi assim que meu grupo levou o 1º lugar no NEXT com dois projetos.</p>
+      <p>Trabalho com folga no prazo e com tudo combinado por escrito. Não é frescura: é por isso que meus projetos costumam ser tranquilos, pra mim e pra quem me contrata.</p>
+    </div>
+    <div class="tags" aria-label="Áreas"><span>Branding</span><span>Direção de arte</span><span>Social media</span><span>UI/UX</span><span>Web design</span><span>Papelaria</span><span>Motion</span></div>
+  </div>
+</section>
+
+
+
+<section class="contact" id="contato" aria-labelledby="h-ct">
+  <div class="poster paper shadow">
+    <span class="tape a"></span><span class="tape b"></span>
+    <h2 id="h-ct" class="d">Procura-se <span class="g">projeto bom.</span></h2>
+    <p>Tem uma marca pra nascer, um perfil parado ou um casamento chegando? Me chama. Respondo por mensagem, com calma e com proposta escrita.</p>
+    <div class="tabs" id="tabs">
+      <button class="tab" type="button" data-copy="@briefing.ao.pixel"><b>Instagram</b><small>@briefing.ao.pixel</small></button>
+      <button class="tab" type="button" data-copy="briefing.ao.pixel@gmail.com"><b>E-mail</b><small>briefing.ao.pixel@gmail.com</small></button>
+      <button class="tab" type="button" data-copy="https://www.linkedin.com/in/ingridsdlima/"><b>LinkedIn</b><small>/in/ingridsdlima</small></button>
+      <button class="tab" type="button" data-copy="@briefing.ao.pixel"><b>Direct</b><small>manda "FREELA"</small></button>
+    </div>
+  </div>
+</section>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+<div class="links"><a href="https://instagram.com/briefing.ao.pixel">Instagram @briefing.ao.pixel</a><a href="mailto:briefing.ao.pixel@gmail.com">E-mail</a><a href="https://www.linkedin.com/in/ingridsdlima/">LinkedIn</a><a href="https://github.com/Ingrid-SLima">GitHub</a></div>
+</main>
+<footer><span>Ingrid Lima · 2026</span><span>Desenhado e codado por mim.</span></footer>
+
+<dialog class="lb" id="lb" aria-labelledby="lbT"><button class="lb-close" id="lbX" type="button">Fechar</button><div class="lb-in"><div class="lb-art" id="lbArt"></div><div class="lb-cap"><h3 id="lbT"></h3><p id="lbP"></p></div></div></dialog>
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine=matchMedia('(pointer: fine)').matches;
+setTimeout(()=>document.querySelector('.scan')?.remove(),1800);
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+
+/* palavra que troca */
+const words=['um.','post.','logo.','convite.'];let wi=0;const sw=$('#swap');
+sw.addEventListener('click',()=>{wi=(wi+1)%words.length;sw.textContent=words[wi];sw.setAttribute('aria-label','Trocar palavra: '+words[wi]);});
+
+/* arrastar */
+const drag=(el,box)=>{let sx,sy,ox,oy,id=null;
+ el.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;id=e.pointerId;el.setPointerCapture(id);sx=e.clientX;sy=e.clientY;ox=el.offsetLeft;oy=el.offsetTop;el.style.zIndex=++drag.z;});
+ el.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const dx=e.clientX-sx,dy=e.clientY-sy;el.style.left=Math.max(-20,Math.min(box.clientWidth-el.offsetWidth+20,ox+dx))+'px';el.style.top=Math.max(-20,Math.min(box.clientHeight-el.offsetHeight+20,oy+dy))+'px';el.style.rotate=(dx/18).toFixed(1)+'deg';});
+ el.addEventListener('pointerup',()=>{if(id===null)return;id=null;el.style.rotate=((Math.random()-.5)*14).toFixed(1)+'deg';});};drag.z=10;
+const L=$('#letters');const pos=[[4,6],[30,2],[58,8],[12,30],[44,26],[70,34]];
+'INGRID'.split('').forEach((c,i)=>{const s=document.createElement('span');s.className='cut c'+(i%4+1);s.textContent=c;s.style.left=pos[i][0]+'%';s.style.top=pos[i][1]+'%';s.style.rotate=((i%2?1:-1)*(4+i*1.5))+'deg';L.appendChild(s);drag(s,L);
+ if(!reduce)s.animate([{transform:'translateY(-120vh) rotate(40deg)'},{transform:'none'}],{duration:700,delay:1300+i*90,easing:'cubic-bezier(.2,1.4,.4,1)',fill:'backwards'});});
+if(fine&&innerWidth>900)$$('.pin').forEach(p=>drag(p,$('#board')));
+
+/* títulos recortados */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.cutin').forEach(c=>c.classList.add('in'));io.unobserve(e.target);}}),{rootMargin:'0px 0px -10% 0px'});setTimeout(()=>$$('.cutin').forEach(c=>c.classList.add('in')),5000);
+$$('.cutin').forEach(el=>io.observe(el.closest('section,article')));
+
+/* polaroid do índice */
+const peek=$('#peek'),pb=$('#peekbox');
+const peeks={maisbella:'<div style="position:absolute;inset:0;background:#F5F0E8;display:grid;place-items:center;font-family:Italiana;font-size:42px;color:#2B2820">Mais Bella</div>',
+ casamento:'<div style="position:absolute;inset:0;background:#F7F2EA;display:grid;place-items:center;font-family:\'Pinyon Script\';font-size:52px;color:#A3502F">H &amp; R</div>',
+ mutirao:'<div style="position:absolute;inset:0;background:#CDE7DD;display:grid;place-items:center;font-family:Gloock;font-size:44px;color:#12332E">Mutirão</div>'};
+if(fine){$$('.works a').forEach(a=>{a.addEventListener('mouseenter',()=>{const k=a.dataset.peek,img=a.dataset.img;
+ pb.innerHTML=k?peeks[k]:img?'<img src="'+img+'" alt="">':'<div style="position:absolute;inset:0;background:#1a1414;display:grid;place-items:center;font-family:\'Permanent Marker\';font-size:30px;color:#F7F2EE">recortes</div>';peek.classList.add('on');});
+ a.addEventListener('mouseleave',()=>peek.classList.remove('on'));});
+ let px=0,py=0,tx=0,ty=0;addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;});(function loop(){px+=(tx-px)*.18;py+=(ty-py)*.18;peek.style.left=px+'px';peek.style.top=py+'px';requestAnimationFrame(loop);})();}
+
+/* lightbox */
+const lb=$('#lb'),lbArt=$('#lbArt');
+const openLB=(html,title,txt,wide)=>{lbArt.classList.remove('pap');lbArt.innerHTML=html;lbArt.classList.toggle('wide',!!wide);$('#lbT').textContent=title;$('#lbP').textContent=txt;lb.showModal();fitMini(lbArt);};
+$('#lbX').addEventListener('click',()=>lb.close());
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close();});
+$$('[data-lb]').forEach(b=>b.addEventListener('click',()=>{const pap=!!b.closest('.paperwork,.pw-strip');openLB('<img src="'+b.dataset.lb+'" alt="'+(b.querySelector('img')?.alt||'')+'">',b.dataset.lbt,b.dataset.lbp,!pap);lbArt.classList.toggle('pap',pap);}));
+
+/* Mais Bella: posts (1080x1350) */
+const F="font-family:Italiana",I="font-family:'Inria Serif'",N="font-family:'Nothing You Could Do'";
+const posts=[{t:'Leve o que você precisa',w:'Post pra imprimir na recepção também: a cliente destaca a tira do cuidado que quer e mostra no balcão. Vira conversa sem ela precisar saber o nome técnico.',src:'img/mb-09.webp'},{t:'Tá caindo cabelo demais?',w:'A dúvida que toda cliente tem, escrita do jeito que ela fala. A caixinha acalma antes de vender qualquer coisa.',src:'img/mb-10.webp'},{t:'Queda ou quebra?',w:'Capa de carrossel. A palavra quebrada no meio mostra a diferença antes de qualquer explicação.',src:'img/mb-01.webp'},{t:'Do branco à cor',w:'Colagem preto e branco com a cor só no recorte: o antes e depois sem foto de cliente.',src:'img/mb-02.webp'},{t:'Mais fino ou perdendo volume?',w:'Pergunta direta no título e a avaliação com tricoscopia no rodapé, pra quem ainda não sabe que o salão faz.',src:'img/mb-03.webp'},{t:'Escova',w:'A escova vira silhueta recortada sobre a foto. Post de serviço sem cara de tabela de preço.',src:'img/mb-04.webp'},{t:'Brilho carregando',w:'Linguagem de internet com a paleta calma da marca, pra chegar no público mais jovem.',src:'img/mb-05.webp'},{t:'Cada fio pede um cuidado',w:'Três tipos de cabelo lado a lado com etiquetas curtas, e a Sandra assinando a avaliação.',src:'img/mb-06.webp'},{t:'Verdades sobre o liso perfeito',w:'Capa que chama pra legenda. O perfil limpo deixa o título respirar.',src:'img/mb-07.webp'},{t:'Não é só uma hidratação',w:'Explica a terapia capilar em uma frase, pra atrair cliente nova sem afastar a de sempre.',src:'img/mb-08.webp'}];
+const mini=p=>`<div class="mini" data-mini style="width:1080px;height:1350px;background:${p.bg}">${p.h}</div>`;
+function fitMini(root){root.querySelectorAll('[data-mini]').forEach(m=>{const w=m.parentElement.clientWidth;m.style.transform='scale('+(w/1080)+')';});}
+/* @briefing.ao.pixel: posts zine (1080x1350) */
+const BS="font-family:'Big Shoulders Display';font-weight:900;text-transform:uppercase",GO="font-family:UnifrakturCook",PM="font-family:'Permanent Marker'",SM="font-family:'Space Mono';font-weight:700",IN="font-family:Inter";
+const tape=(l,t,r)=>`<span style="position:absolute;left:${l}px;top:${t}px;width:240px;height:64px;background:rgba(240,230,200,.78);transform:rotate(${r}deg)"></span>`;
+const paper=(c)=>`background:${c} url(img/tx-papel.webp) center/cover`;
+const posts2=[{t:'Eu sou a Ingrid',w:'Apresentação: foto em duotone vermelho, nome em gótico e o que eu faço numa linha.',src:'img/bp-01.webp'},{t:'O que eu faço',w:'Três serviços, três recortes de xerox. Cada um com uma frase do que a pessoa recebe.',src:'img/bp-02.webp'},{t:'Sem enrolação',w:'Como eu trabalho, em três bilhetes colados: briefing por escrito, proposta antes de começar e arquivo final pronto pra usar.',src:'img/bp-03.webp'},{t:'Tem um projeto na cabeça?',w:'Chamada que fecha a série. Uma ação só: me chamar no direct.',src:'img/bp-04.webp'},{t:'Branding como se você tivesse 10 anos',w:'Capa do carrossel. A promessa é explicar fácil, e o "arrasta" já diz que é rápido.',src:'img/bp-05.webp'},{t:'Logo ≠ branding',w:'A analogia da mochila da escola: o logo é o chaveiro, o branding é a mochila inteira.',src:'img/bp-06.webp'},{t:'Branding é o que as pessoas sentem',w:'Resumo do carrossel feito pra salvar e mandar pra quem tá abrindo negócio.',src:'img/bp-07.webp'},{t:'POV: deixar o logo maior',w:'Meme de designer com o logo estourando o quadro. Termina explicando que marca forte é espaço e hierarquia.',src:'img/bp-08.webp'}];
+const pic=(p,lz)=>`<img src="${p.src}" alt="Post: ${p.t}" width="1080" height="1350"${lz?' loading="lazy"':''}>`;
+const buildFeed=(el,arr)=>arr.forEach(p=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Ampliar post: '+p.t);b.innerHTML=pic(p,1);b.addEventListener('click',()=>openLB(pic(p),p.t,p.w));el.appendChild(b);});
+const feed=$('#feed'),feed2=$('#feed2');buildFeed(feed,posts);buildFeed(feed2,posts2);
+const refit=()=>{fitMini(feed);fitMini(feed2);if(lb.open)fitMini(lbArt);};requestAnimationFrame(refit);addEventListener('resize',refit);
+
+/* envelope */
+const tr=$('#envTrack'),env=$('#envelope'),flap=$('#flap');
+const onScroll=()=>{const r=tr.getBoundingClientRect();const total=r.height-innerHeight;let p=Math.min(1,Math.max(0,-r.top/total));
+ const open=Math.min(1,p/.4),card=Math.min(1,Math.max(0,(p-.35)/.35)),fr=Math.min(1,Math.max(0,(p-.74)/.22));
+ env.style.setProperty('--p',open);env.style.setProperty('--c',card);env.style.setProperty('--f',fr);env.style.setProperty('--fz',fr>0?5:0);flap.style.setProperty('--z',open>.5?3:0);};
+if(!reduce){addEventListener('scroll',onScroll,{passive:true});onScroll();}
+
+
+/* telas trocáveis (Mutirão, Bella Nails) */
+$$('[data-shots]').forEach(box=>{const bs=box.querySelectorAll('.btabs button'),im=box.querySelector('.shot-img'),cap=box.querySelector('.shot-cap');
+ bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));im.src=b.dataset.src;im.alt=b.dataset.alt;cap.textContent=b.dataset.cap;}));});
+
+/* Khipu idioma */
+const kq=$('#khq');$$('.lang button').forEach(b=>b.addEventListener('click',()=>{$$('.lang button').forEach(x=>x.setAttribute('aria-pressed',x===b));const atl=b.dataset.l==='atl';kq.textContent=atl?'Intiqa ukhupi tiyan.':'O sol mora no fundo.';kq.lang=atl?'art':'pt-BR';}));
+
+/* Aurora: telas + ROI */
+$$('[data-lp]').forEach(box=>{const sc=box.querySelector('.lp-scroll'),im=sc.querySelector('img'),cap=box.querySelector('.lp-cap'),bs=box.querySelectorAll('.lp-chaps button');
+ bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));cap.textContent=b.dataset.cap;sc.scrollTo({top:(+b.dataset.y/9337)*im.clientHeight,behavior:reduce?'auto':'smooth'});}));});
+const fmt=n=>n.toLocaleString('pt-BR');
+const roi=()=>{const a=+$('#r1').value,t=+$('#r2').value,s=+$('#r3').value;$('#r1v').textContent=fmt(a);$('#r2v').textContent=t;$('#r3v').textContent=fmt(s);
+ const v=Math.round(a*t/100*s*13*1.5);$('#roiOut').textContent='R$ '+fmt(v);$('#roiSplit').textContent='Recrutamento R$ '+fmt(Math.round(v*.3))+' · Onboarding R$ '+fmt(Math.round(v*.25))+' · Produtividade perdida R$ '+fmt(Math.round(v*.45));};['#r1','#r2','#r3'].forEach(i=>$(i).addEventListener('input',roi));roi();
+
+/* caixa de ferramentas */
+const tools={
+ 'Figma':['Mutirão: protótipo e design system','Studio Mais Bella: brandbook','Casamentos: papelaria e convite','Bella Nails: telas desktop e mobile','Khipu e Aurora: prototipação'],
+ 'Canva':['Studio Mais Bella: posts no padrão premium de baixo custo','Aurora: identidade visual'],
+ 'HTML/CSS':['Khipu: portal completo','Aurora: landing page','Casamentos: site-convite'],
+ 'JavaScript':['Khipu: troca de idioma e assistente','Aurora: simulador de ROI e formulário','Casamentos: interações do convite'],
+ 'React':['Iara Games: loja de jogos indie, convertida para React na fase final'],
+ 'GitHub':['Khipu, Aurora e Iara Games: versionamento em equipe'],
+ 'Vercel':['Khipu, Aurora e Iara Games: publicação dos projetos'],
+ 'Chatbot':['Khipu: ChasquiBOT, com motor de busca próprio','Aurora: IRIS, com Gemini e proteção contra prompt injection','Mutirão: PontoBOT, com Gemini e resposta de reserva'],
+ 'Acessibilidade':['Em todo projeto da FIAP: chatbot, VLibras ou os dois','Aurora: WCAG 2.1, contraste AAA, VLibras e skip links','Mutirão: auditoria de linguagem e acessibilidade','Este portfólio: teclado, contraste e reduced motion'],
+ 'Pesquisa UX':['Mutirão: entrevistas com famílias que cuidam'],
+ 'Branding':['Studio Mais Bella','@briefing.ao.pixel','Casamentos: monogramas e paletas'],
+ 'Social media':['Studio Mais Bella: feed, stories e roteiros','@briefing.ao.pixel: lançamento do perfil']
+};
+const kit=$('#kit'),out=$('#toolout');
+const show=k=>{$$('#kit button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===k));out.innerHTML='<h3>'+k+'</h3><ul>'+tools[k].map(x=>'<li>'+x+'</li>').join('')+'</ul>';};
+Object.keys(tools).forEach(k=>{const b=document.createElement('button');b.type='button';b.textContent=k;b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>show(k));kit.appendChild(b);});
+$$('[data-tool]').forEach(c=>c.addEventListener('click',()=>{const k=c.dataset.tool;if(tools[k]){show(k);$('#ferramentas').scrollIntoView({behavior:reduce?'auto':'smooth'});}}));
+
+
+/* bordas rasgadas nos papéis */
+const tear=el=>{const n=46,p=[];for(let i=0;i<=n;i++)p.push((i*100/n).toFixed(2)+'% '+(Math.random()*1.8).toFixed(2)+'%');for(let i=n;i>=0;i--)p.push((i*100/n).toFixed(2)+'% '+(100-Math.random()*1.8).toFixed(2)+'%');el.style.setProperty('--tear','polygon('+p.join(',')+')');el.classList.add('torn-edge');};
+$$('.manifesto,.poster,.toolout,.zine .strip').forEach(tear);
+
+/* shapes do NEXT */
+$$('.deck').forEach(d=>{let flipped=false;
+ if(fine&&!reduce){d.addEventListener('pointermove',e=>{const r=d.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;d.classList.add('moving');d.style.setProperty('--ry',(x*36)+'deg');d.style.setProperty('--rx',(-y*18)+'deg');});
+ d.addEventListener('pointerleave',()=>{d.classList.remove('moving');d.style.setProperty('--ry','0deg');d.style.setProperty('--rx','0deg');});}
+ d.addEventListener('click',()=>{flipped=!flipped;d.classList.remove('moving');d.style.setProperty('--flip',flipped?'180deg':'0deg');d.setAttribute('aria-pressed',flipped);$('#deckStatus').textContent=flipped?'Shape virado: mostrando a foto.':'Shape desvirado.';});});
+/* pausar animações */
+const still=$('#still');const setStill=on=>{document.body.classList.toggle('still',on);still.setAttribute('aria-pressed',on);still.setAttribute('aria-label',on?'Rodar animações':'Pausar animações');still.title=on?'Rodar animações':'Pausar animações';};
+if(reduce)setStill(true);still.addEventListener('click',()=>setStill(!document.body.classList.contains('still')));
+/* cartaz */
+const st=$('#status');
+$$('.tab').forEach(t=>t.addEventListener('click',async()=>{const v=t.dataset.copy;let ok=false;try{await navigator.clipboard.writeText(v);ok=true;}catch(e){}
+ st.textContent=ok?'Copiado: '+v:v;if(!reduce)t.classList.add('torn');setTimeout(()=>t.classList.remove('torn'),2600);}));
+/* convite digital: loop */
+const cvL=$('#cvLoop'),cvB=$('#cvBtn');if(cvL){const setP=p=>{cvL.classList.toggle('paused',p);$('#cvView').classList.toggle('scroll',p);cvB.textContent=p?'Rodar o vídeo':'Pausar o vídeo';cvB.setAttribute('aria-pressed',p);};if(reduce)setP(true);cvB.addEventListener('click',()=>setP(!cvL.classList.contains('paused')));}
+})();
+</script>
+</body>
+</html>
