@@ -580,7 +580,7 @@ p,li,dd,blockquote{text-wrap:pretty}h1,h2,h3,.lede{text-wrap:balance}
 .bn .browser .bar{background:#E7DED3}.bn .browser .bar i{background:#cdbfae}
 .bn .btabs button[aria-pressed=true]{background:#4A3A30;border-color:#4A3A30;color:#F3EEE7}
 .bn .au-cap{color:#4A3A30}
-.bn-desk{max-width:1040px;margin-inline:auto}.bn-foot{margin-top:22px;font-family:'Atkinson Hyperlegible',var(--sans);font-size:16px;max-width:70ch}
+.bn-desk{max-width:1040px;margin-inline:auto}.bn-facts{margin-top:40px;font-family:'Atkinson Hyperlegible',var(--sans)}.bn-live{display:inline-block;padding:10px 0;margin-left:6px;font-weight:700;color:#A3502F;text-underline-offset:4px}.bn-foot{margin-top:22px;font-family:'Atkinson Hyperlegible',var(--sans);font-size:16px;max-width:70ch}
 @media (max-width:900px){
  .paperwork,.mut-intro,.mut-top,.mut-more,.bn-head{grid-template-columns:1fr}
  .mut-top{justify-items:center}.mut-top .browser{justify-self:stretch}
@@ -784,7 +784,7 @@ dialog.lb[open]{display:grid;place-items:center}
     <li><a href="#mais-bella" data-img="img/mb-01.webp"><span class="t">Studio Mais Bella</span><span class="k">Rebranding e social media para salão</span></a></li>
     <li><a href="#casamento" data-peek="casamento"><span class="t">Casamentos</span><span class="k">Papelaria física e convite digital</span></a></li>
     <li><a href="#mutirao" data-peek="mutirao"><span class="t">Mutirão</span><span class="k">Site pra famílias que dividem o cuidado de alguém</span></a></li>
-    <li><a href="#playground" data-img="img/bp-01.webp"><span class="t">Fora da faculdade</span><span class="k">Meu Instagram e uma agenda online pra manicure</span></a></li>
+    <li><a href="#playground" data-img="img/bp-01.webp"><span class="t">Fora da faculdade</span><span class="k">Meu Instagram e uma agenda online no ar</span></a></li>
   </ul>
 </section>
 <div class="peek" id="peek" aria-hidden="true"><span class="tape"></span><div class="duo" id="peekbox"></div></div>
@@ -1115,14 +1115,14 @@ dialog.lb[open]{display:grid;place-items:center}
   <div class="bn" aria-labelledby="h-bn">
     <div class="bn-head">
       <h3 id="h-bn" class="bn-t">Bella <i>nails</i></h3>
-      <p>A Isabela atende sozinha e marcava tudo por mensagem, respondendo entre uma cliente e outra. Estou desenhando uma agenda em que a cliente marca sozinha e a Isabela só confere.</p>
+      <p>A Isabela atende sozinha e marcava tudo por mensagem, respondendo entre uma cliente e outra. Desenhei e programei uma agenda em que a cliente marca sozinha e a Isabela só confere. Já está no ar, com clientes de verdade.</p>
     </div>
     <ol class="bn-steps">
       <li><img src="img/bn-m-login.webp" width="540" height="1169" loading="lazy" alt="Entrada da agenda pedindo celular e dia do aniversário"><b>Entrada</b>Celular e dia do aniversário. Sem senha pra esquecer.</li>
       <li><img src="img/bn-m-servico.webp" width="540" height="1169" loading="lazy" alt="Passo 1, escolha do serviço, com banho de gel selecionado"><b>Serviço</b>Dá pra escolher mais de um. A agenda soma o tempo sozinha.</li>
       <li><img src="img/bn-m-dia.webp" width="540" height="1169" loading="lazy" alt="Passo 2, escolha do dia, em cartões em formato de arco"><b>Dia</b>Só aparecem os dias em que cabe tudo que ela escolheu.</li>
       <li><img src="img/bn-m-hora.webp" width="540" height="1169" loading="lazy" alt="Passo 3, escolha do horário, com 14h30 selecionado"><b>Horário</b>Todos os horários mostrados já têm o tempo necessário.</li>
-      <li><img src="img/bn-m-confira.webp" width="540" height="1169" loading="lazy" alt="Passo 4, resumo com data, horário e serviço"><b>Confere</b>Resumo antes de marcar e a política de atendimento pra aceitar.</li>
+      <li><img src="img/bn-m-confira.webp" width="540" height="1169" loading="lazy" alt="Passo 4, resumo com data, horário e serviço"><b>Confere</b>Resumo com o valor, já com desconto de combo, e as políticas do studio pra aceitar.</li>
     </ol>
     <div class="shots bn-desk" data-shots>
       <div class="btabs" role="group" aria-label="Telas da Bella Nails no computador">
@@ -1133,7 +1133,13 @@ dialog.lb[open]{display:grid;place-items:center}
       <div class="browser"><div class="bar"><i></i><i></i><i></i><span>agenda bella nails</span></div><img class="shot-img" src="img/bn-d-home.webp" width="2000" height="1250" loading="lazy" alt="Início da cliente: bem-vinda, Maria, com botão de marcar horário"></div>
       <p class="au-cap shot-cap" aria-live="polite">Lado da cliente: um botão principal, marcar horário, e os horários que ela já tem.</p>
     </div>
-    <p class="bn-foot">Antes do primeiro horário, a cliente lê numa frase o que acontece com os dados dela. Paleta sálvia, ferrugem e café, letra grande e botões largos. <span class="pend">em andamento</span></p>
+    <dl class="facts bn-facts">
+      <div><dt>Pra cliente</dt><dd>Preço de cada serviço, combos com desconto automático, pacote mensal com saldo e reposição cobrada por unha.</dd></div>
+      <div><dt>Pra Isabela</dt><dd>Painel pra mudar serviços, valores, horários, folgas e políticas sem precisar de mim. Entrada com verificação em duas etapas.</dd></div>
+      <div><dt>Por trás</dt><dd>Nome e celular das clientes guardados cifrados, banco fechado pro público e aviso de privacidade em linguagem simples, por causa da LGPD. Um horário nunca é marcado duas vezes.</dd></div>
+      <div><dt>Ferramentas</dt><dd><span class="chips"><button type="button" data-tool="Figma"><span>Figma</span></button><button type="button" data-tool="JavaScript"><span>JavaScript</span></button><button type="button" data-tool="Acessibilidade"><span>Acessibilidade</span></button></span></dd></div>
+    </dl>
+    <p class="bn-foot">Paleta sálvia, ferrugem e café, letra grande e botões largos, porque muitas clientes são mais velhas. <a class="bn-live" href="https://bella-nails-agenda.netlify.app" target="_blank" rel="noopener">Ver a agenda no ar<span class="sr"> (abre em nova aba)</span></a></p>
   </div>
 </section>
 
@@ -1269,15 +1275,17 @@ const roi=()=>{const a=+$('#r1').value,t=+$('#r2').value,s=+$('#r3').value;$('#r
 
 /* caixa de ferramentas */
 const tools={
- 'Figma':['Mutirão: protótipo e design system','Studio Mais Bella: brandbook','Casamentos: papelaria e convite','Bella Nails: telas desktop e mobile','Khipu e Aurora: prototipação'],
+ 'Figma':['Mutirão: protótipo e design system','Studio Mais Bella: brandbook','Casamentos: papelaria e convite','Bella Nails: design system e protótipo navegável','Khipu e Aurora: prototipação'],
  'Canva':['Studio Mais Bella: posts no padrão premium de baixo custo','Aurora: identidade visual'],
  'HTML/CSS':['Khipu: portal completo','Aurora: landing page','Casamentos: site-convite'],
- 'JavaScript':['Khipu: troca de idioma e assistente','Aurora: simulador de ROI e formulário','Casamentos: interações do convite'],
+ 'JavaScript':['Bella Nails: agenda no ar, com painel da profissional','Khipu: troca de idioma e assistente','Aurora: simulador de ROI e formulário','Casamentos: interações do convite'],
  'React':['Iara Games: loja de jogos indie, convertida para React na fase final'],
- 'GitHub':['Khipu, Aurora e Iara Games: versionamento em equipe'],
+ 'GitHub':['Khipu, Aurora e Iara Games: versionamento em equipe','Bella Nails: código da agenda'],
+ 'Banco de dados':['Bella Nails: Supabase com dados cifrados e acesso fechado'],
  'Vercel':['Khipu, Aurora e Iara Games: publicação dos projetos'],
+ 'Netlify':['Bella Nails: agenda publicada, com funções de servidor'],
  'Chatbot':['Khipu: ChasquiBOT, com motor de busca próprio','Aurora: IRIS, com Gemini e proteção contra prompt injection','Mutirão: PontoBOT, com Gemini e resposta de reserva'],
- 'Acessibilidade':['Em todo projeto da FIAP: chatbot, VLibras ou os dois','Aurora: WCAG 2.1, contraste AAA, VLibras e skip links','Mutirão: auditoria de linguagem e acessibilidade','Este portfólio: teclado, contraste e reduced motion'],
+ 'Acessibilidade':['Em todo projeto da FIAP: chatbot, VLibras ou os dois','Bella Nails: entrada sem senha e letra grande pra clientes mais velhas','Aurora: WCAG 2.1, contraste AAA, VLibras e skip links','Mutirão: auditoria de linguagem e acessibilidade','Este portfólio: teclado, contraste e reduced motion'],
  'Pesquisa UX':['Mutirão: entrevistas com famílias que cuidam'],
  'Branding':['Studio Mais Bella','@briefing.ao.pixel','Casamentos: monogramas e paletas'],
  'Social media':['Studio Mais Bella: feed, stories e roteiros','@briefing.ao.pixel: lançamento do perfil']
