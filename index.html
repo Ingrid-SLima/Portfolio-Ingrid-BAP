@@ -297,7 +297,7 @@ footer{padding:40px var(--pad) 60px;display:flex;justify-content:space-between;g
   .poster{padding:44px 24px 0}
   .tabs{flex-wrap:wrap}.tab{min-height:110px;flex:1 1 50%;border-bottom:2px dashed #8a7c74}
 }
-@media (max-width:560px){.nav ul{gap:10px}.nav ul li:nth-child(3){display:none}.nav .home img{height:42px}.nav ul li:nth-child(2){display:none}}
+@media (max-width:560px){.nav ul{gap:10px}.nav .home img{height:42px}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .scan{display:none}
@@ -745,6 +745,34 @@ dialog.lb[open]{display:grid;place-items:center}
 .wed .names,.wed p{overflow-wrap:break-word}
 @media (max-width:340px){.envelope .names{font-size:22px!important}}
 .trophy h2{padding-right:.12em}
+
+/* menu do celular */
+.mbtn{display:none}
+.nav .mnav[hidden]{display:none}
+.nav-links a[aria-current]{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px;text-decoration-color:var(--vermelho)}
+@media (max-width:760px){
+ .nav-links{display:none!important}
+ .mbtn{display:inline-flex;align-items:center;gap:10px;margin-left:auto;min-height:44px;padding:0 14px;border:2px solid var(--osso);background:transparent;color:var(--osso);font:700 17px/1 var(--display);text-transform:uppercase;letter-spacing:.04em;cursor:pointer}
+ .mbtn:focus-visible,.nav .mnav a:focus-visible{outline:3px solid var(--vermelho);outline-offset:3px}
+ .mbtn-ic{display:grid;gap:4px;width:18px}
+ .mbtn-ic i{display:block;height:2px;background:currentColor;transition:transform .25s,opacity .2s}
+ .mbtn[aria-expanded="true"]{background:var(--osso);color:var(--tinta)}
+ .mbtn[aria-expanded="true"] .mbtn-ic i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+ .mbtn[aria-expanded="true"] .mbtn-ic i:nth-child(2){opacity:0}
+ .mbtn[aria-expanded="true"] .mbtn-ic i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+ .nav .mnav{position:absolute;top:100%;left:0;right:0;background:var(--tinta);border-bottom:3px solid var(--vermelho);box-shadow:0 24px 40px -20px rgba(0,0,0,.8);max-height:calc(100dvh - 64px);overflow-y:auto;overscroll-behavior:contain;padding:14px var(--pad) 24px;animation:mnav-in .22s ease-out}
+ @keyframes mnav-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+ .nav .mnav-now{margin:0 0 8px;font:400 14px var(--marcador);color:var(--cinza)}
+ .nav .mnav-now b{color:var(--vermelho);font-weight:400}
+ .nav .mnav ul{display:block;list-style:none;margin:0;padding:0}
+ .nav .mnav>ul>li{border-top:1px solid rgba(247,242,238,.16)}
+ .nav .mnav a{display:flex;align-items:center;min-height:48px;padding:6px 0 6px 14px;font:800 26px/1.05 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--osso);border-left:4px solid transparent}
+ .nav .mnav .mnav-sub{margin:0 0 10px 14px;border-left:1px dashed rgba(247,242,238,.3)}
+ .nav .mnav .mnav-sub a{min-height:40px;font:400 17px/1.2 var(--sans);text-transform:none;letter-spacing:0;color:var(--cinza)}
+ .nav .mnav a[aria-current]{border-left-color:var(--vermelho);color:#fff;background:linear-gradient(90deg,rgba(224,32,27,.22),transparent 70%)}
+ .nav .mnav .mnav-sub a[aria-current]{color:#fff}
+}
+@media (prefers-reduced-motion:reduce){.nav .mnav{animation:none}.mbtn-ic i{transition:none}}
 </style>
 </head>
 <body>
@@ -754,13 +782,34 @@ dialog.lb[open]{display:grid;place-items:center}
 
 <nav class="nav" aria-label="Principal">
   <a class="home" href="#topo"><img src="img/logo-bap.webp" width="105" height="60" alt="briefing ao pixel, Ingrid Lima: voltar ao topo"></a>
-  <ul>
+  <ul class="nav-links">
     <li><a href="#trabalhos">Trabalhos</a></li>
     <li><a href="#ferramentas">Ferramentas</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
+  <button class="mbtn" id="mbtn" type="button" aria-expanded="false" aria-controls="mnav"><span class="mbtn-ic" aria-hidden="true"><i></i><i></i><i></i></span><span class="mbtn-tx">Menu</span></button>
   <button id="still" class="still-btn" type="button" aria-pressed="false" aria-label="Pausar animações" title="Pausar animações"><span class="ic" aria-hidden="true"></span></button>
+  <div class="mnav" id="mnav" hidden>
+    <p class="mnav-now" aria-live="polite">Você está em <b id="mnavNow">Início</b></p>
+    <ul>
+      <li><a href="#topo" data-sec="topo">Início</a></li>
+      <li><a href="#trabalhos" data-sec="trabalhos">Trabalhos</a>
+        <ul class="mnav-sub">
+          <li><a href="#next" data-sec="next">Pódio NEXT FIAP</a></li>
+          <li><a href="#khipu" data-sec="khipu">Khipu</a></li>
+          <li><a href="#aurora" data-sec="aurora">Aurora</a></li>
+          <li><a href="#mais-bella" data-sec="mais-bella">Studio Mais Bella</a></li>
+          <li><a href="#casamento" data-sec="casamento">Papelaria de casamento</a></li>
+          <li><a href="#mutirao" data-sec="mutirao">Mutirão</a></li>
+        </ul>
+      </li>
+      <li><a href="#playground" data-sec="playground">Fora da faculdade</a></li>
+      <li><a href="#ferramentas" data-sec="ferramentas">Ferramentas</a></li>
+      <li><a href="#sobre" data-sec="sobre">Sobre</a></li>
+      <li><a href="#contato" data-sec="contato">Contato</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main id="topo">
@@ -1209,6 +1258,22 @@ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine=matchMedia('(pointer: fine)').matches;
 setTimeout(()=>document.querySelector('.scan')?.remove(),1800);
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+
+/* menu do celular + seção atual */
+{const b=$('#mbtn'),m=$('#mnav'),now=$('#mnavNow');
+ const open=v=>{b.setAttribute('aria-expanded',v);m.hidden=!v;b.querySelector('.mbtn-tx').textContent=v?'Fechar':'Menu';if(v){(m.querySelector('a[aria-current]')||m.querySelector('a')).focus({preventScroll:true});}};
+ b.addEventListener('click',()=>open(b.getAttribute('aria-expanded')!=='true'));
+ m.addEventListener('click',e=>{if(e.target.closest('a'))open(false);});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden){open(false);b.focus();}});
+ document.addEventListener('click',e=>{if(!m.hidden&&!e.target.closest('.nav'))open(false);});
+ matchMedia('(min-width:761px)').addEventListener('change',e=>{if(e.matches)open(false);});
+ const ids=$$('#mnav a[data-sec]').map(a=>a.dataset.sec);const secs=ids.map(id=>document.getElementById(id)).filter(Boolean);
+ const top={trabalhos:'trabalhos',next:'trabalhos',khipu:'trabalhos',aurora:'trabalhos','mais-bella':'trabalhos',casamento:'trabalhos',mutirao:'trabalhos',ferramentas:'ferramentas',sobre:'sobre',contato:'contato'};
+ const mark=id=>{$$('#mnav a[data-sec]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.sec===id));if(id)$$('#mnav a[data-sec]').forEach(a=>{if(a.dataset.sec===id)a.setAttribute('aria-current','location')});
+  $$('.nav-links a').forEach(a=>{const on=a.getAttribute('href')==='#'+top[id];a.toggleAttribute('aria-current',on);if(on)a.setAttribute('aria-current','location')});
+  const a=$(`#mnav a[data-sec="${id}"]`);now.textContent=a?a.textContent:'Início';};
+ let cur='topo';const pick=()=>{const y=innerHeight*.35;let best='topo';for(const el of secs){if(el.id==='topo')continue;const r=el.getBoundingClientRect();if(r.top<=y&&r.bottom>y*.2)best=el.id;}if(best!==cur){cur=best;mark(cur);}};
+ addEventListener('scroll',()=>requestAnimationFrame(pick),{passive:true});pick();mark(cur);}
 
 /* palavra que troca */
 const words=['um.','post.','logo.','convite.'];let wi=0;const sw=$('#swap');
